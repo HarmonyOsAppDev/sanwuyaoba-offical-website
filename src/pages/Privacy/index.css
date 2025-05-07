@@ -1,0 +1,33 @@
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background: black;
+    }
+
+    body {
+        filter: invert(1) hue-rotate(180deg);
+    }
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+button {
+    background: white;
+    border: 2px solid black;
+    height: 50px;
+    font-weight: bold;
+}
+.language-toggle {
+    margin-bottom: 20px;
+}
+.language-toggle button {
+    cursor: pointer;
+    padding: 10px;
+    margin-right: 5px;
+}
+.content {
+    display: none;
+    padding-bottom: 50px;
+}
