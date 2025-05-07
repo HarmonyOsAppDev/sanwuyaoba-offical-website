@@ -1,33 +1,32 @@
-
 @media (prefers-color-scheme: dark) {
     html {
-        background: black;
+      background: black;
     }
-
+  
     body {
-        filter: invert(1) hue-rotate(180deg);
+      filter: invert(1) hue-rotate(180deg);
     }
-}
-
-body {
+  }
+  
+  .container {
     font-family: Arial, sans-serif;
     padding: 20px;
-}
-button {
+  }
+  
+  .language-toggle {
+    margin-bottom: 20px;
+  }
+  
+  .language-button {
     background: white;
     border: 2px solid black;
     height: 50px;
     font-weight: bold;
-}
-.language-toggle {
-    margin-bottom: 20px;
-}
-.language-toggle button {
     cursor: pointer;
     padding: 10px;
     margin-right: 5px;
-}
-.content {
-    display: none;
+  }
+  
+  .content {
     padding-bottom: 50px;
-}
+  } 
