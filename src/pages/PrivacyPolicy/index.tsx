@@ -49,7 +49,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <div className="content" style={{ display: language === 'english' ? 'block' : 'none' }}>
         <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>Privacy Policy</h1>
-        <p style={{ marginBottom: '20px' }}>Last Updated: XX/XX/2025</p>
+        <p style={{ marginBottom: '20px' }}>Last Updated: 20/05/2025</p>
         <p style={{ marginBottom: '20px' }}>Shenzhen Sanwu Yifa Technology Co., Ltd. is the operator of the Zhiwei Universe platform (hereinafter referred to as "Zhiwei Universe" or "we"). This Privacy Policy explains how Zhiwei Universe will handle your personal information and privacy information, and declares our commitment to privacy protection. Zhiwei Universe may update or modify this policy from time to time based on information processing scenarios. Please read, understand and agree to this policy and any supplementary policies before submitting your personal information or privacy information to Zhiwei Universe.</p>
         
         <p style={{ marginBottom: '20px' }}>This privacy policy will help you understand:</p>
@@ -225,7 +225,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <div className="content" style={{ display: language === 'chinese' ? 'block' : 'none' }}>
         <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>隐私政策</h1>
-        <p style={{ marginBottom: '20px' }}>更新日期：2025年XX月XX日</p>
+        <p style={{ marginBottom: '20px' }}>更新日期：2025年05月20日</p>
         <p style={{ marginBottom: '20px' }}>深圳市叁伍幺发科技有限公司是知微宇宙平台（以下简称「知微宇宙」或「我们」）的运营者，本《隐私政策》阐述了知微宇宙将如何处理您的个人信息和隐私信息，并申明了知微宇宙对保护隐私的承诺，知微宇宙未来有可能根据信息处理情境不时更新或修改本政策。请您在向知微宇宙提交个人信息或隐私信息之前，阅读、了解并同意本政策和任何补充政策。</p>
 
         <p style={{ marginBottom: '20px' }}>本隐私政策将帮助您了解：</p>
