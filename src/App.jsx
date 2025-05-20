@@ -2,6 +2,7 @@ import './App.css'
 import OfficialHome from './OfficialHome.jsx'
 import { Routes, Route } from 'react-router-dom'
 import PrivacyPolicy from './pages/PrivacyPolicy'
+import UserPolicy from './pages/UserPolicy'
 
 function App() {
 
