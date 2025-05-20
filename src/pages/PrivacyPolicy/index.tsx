@@ -47,92 +47,91 @@ const PrivacyPolicy: React.FC = () => {
       </div>
 
       <div className="content" style={{ display: language === 'english' ? 'block' : 'none' }}>
-        <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>Sanwu Planet Privacy Policy</h1>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Introduction</h2>
-          <p>Welcome to Sanwu Planet! We value your privacy and data protection. This Privacy Policy is intended to transparently explain how we handle information related to your use of the Sanwu Planet app in compliance with Chinese laws and regulations.</p>
-        </section>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Information Collection</h2>
-          <p>To provide our services, the app requires:</p>
-          <ul>
-            <li>Internet access for account verification and essential functions</li>
-            <li>Camera permission for AR features (using EasyAR SDK)</li>
-            <li>Verification code for user authentication</li>
-            <li>Real-name information as required by Chinese regulations</li>
-          </ul>
-          <p>We do not intentionally collect personal information beyond what is necessary for these functions.</p>
-        </section>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Third-party SDK</h2>
-          <p>The app integrates EasyAR SDK to provide augmented reality features. While we do not collect personal information through our own services, we cannot guarantee the data collection practices of third-party SDKs. Please refer to EasyAR's privacy policy for details.</p>
-        </section>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Data Usage and Storage</h2>
-          <p>All collected information is used solely for:</p>
-          <ul>
-            <li>User authentication and account security</li>
-            <li>Providing core app functionality</li>
-            <li>Compliance with Chinese laws and regulations</li>
-          </ul>
-          <p>Data is stored securely on servers located in Mainland China.</p>
-        </section>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Data Security</h2>
-          <p>We implement appropriate technical and organizational measures to protect user information, including encryption and access controls. However, no internet transmission or storage system can be guaranteed to be 100% secure.</p>
-        </section>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Children's Privacy</h2>
-          <p>In compliance with China's Minor Protection Law, users under 14 must obtain parental consent before using our services. We do not knowingly collect personal information from children without proper authorization.</p>
-        </section>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Changes to This Policy</h2>
-          <p>We may update this Privacy Policy to reflect changes in our practices or legal requirements. Continued use of the app after such changes constitutes acceptance of the revised policy.</p>
-        </section>
-        <section style={{ marginBottom: '20px' }}>
-          <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>Contact Us</h2>
-          <p>If you have any questions about this Privacy Policy or wish to exercise your rights under Chinese law, please contact ShenZhen SanWuYiFa Technology Co., Ltd. at hello@swyf.com</p>
-        </section>
+        <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>Privacy Policy</h1>
+        <p style={{ marginBottom: '20px' }}>Last Updated: 2025/05/21</p>
+        <p style={{ marginBottom: '20px' }}>Shenzhen Sanwu Yifa Technology Co., Ltd. is the operator of the Zhiwei Universe platform (hereinafter referred to as "Zhiwei Universe" or "we"). This Privacy Policy explains how Zhiwei Universe will handle your personal information and privacy information, and declares our commitment to privacy protection. Zhiwei Universe may update or modify this policy from time to time based on information processing scenarios. Please read, understand and agree to this policy and any supplementary policies before submitting your personal information or privacy information to Zhiwei Universe.</p>
+        
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>1. How We Collect and Use Personal Information</h2>
+        <p>We collect information that you actively provide when using our services, as well as information generated through automated means during your use of features or services:</p>
+        
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.1 Registration, Login, and Authentication</h3>
+        <p>When you register or log in to Zhiwei Universe and related services, you can create an account using your phone number. We collect this information to help you better use the core business functions of the Zhiwei Universe APP.</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.2 Playback and Browsing</h3>
+        <p>Storage permission: When you use features such as sharing and saving images to albums, we will request this permission. If you disable storage authorization, you may not be able to use these features, but this will not affect your continued use of other services we provide.</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.3 Camera and Album Permissions</h3>
+        <p>Camera permission: The AR exploration feature in the Parallel Universe module requires the use of the camera to scan objects. If you disable camera authorization, you may not be able to use this feature, but this will not affect your continued use of other services we provide.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. How We Use Cookies and Similar Technologies</h2>
+        <p>Cookies and device information identifiers are commonly used technologies on the internet. When you use Zhiwei Universe and related services, we may use related technologies to send one or more cookies or anonymous identifiers to your device to collect and identify information about your access and use of our products.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>3. How We Share, Transfer, and Disclose Personal Information</h2>
+        <p>We will not share your personal information with any other third party without your explicit consent, unless the shared personal information has been de-identified and the third party cannot re-identify the natural person subject of such information.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4. How We Store Personal Information</h2>
+        <p>We store your personal information collected and generated during our operations in mainland China in accordance with laws and regulations. Currently, we will not transmit the above information overseas. If we need to transmit information overseas, we will follow relevant national regulations or seek your consent.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>5. How We Protect Personal Information Security</h2>
+        <p>We attach great importance to the security of your personal information and will make reasonable security measures (including technical and management aspects) to protect your personal information from improper use or unauthorized access, public disclosure, use, modification, damage, loss, or leakage.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>6. Managing Your Personal Information</h2>
+        <p>We highly value your management of personal information and will do our best to protect your rights to query, access, modify, delete, withdraw consent authorization, cancel accounts, complain and report, and set privacy functions, so that you can protect your privacy and information security.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. Minor Protection</h2>
+        <p>If you are a minor under the age of 18, you should read and agree to this Privacy Policy under the guidance of your parents or other guardians before using Zhiwei Universe and related services.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. Privacy Policy Revision and Notification</h2>
+        <p>To provide you with better services, Zhiwei Universe and related services will be updated and changed from time to time. We will revise this Privacy Policy accordingly. These revisions constitute part of this Privacy Policy and have the same effect as this Privacy Policy. Without your explicit consent, we will not reduce your rights under the currently effective Privacy Policy.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. Contact Us</h2>
+        <p>If you have any complaints, suggestions, or questions about personal information protection, you can send your questions to (3518@sanwuyaoba.com) or mail to the following address:</p>
+        <p>Room 404, Building 7, Phase 1, Longguang Jiangnan Dajing, Chang'an Town, Dongguan City, Guangdong Province</p>
+        <p>We will review the issues involved as soon as possible and reply within fifteen working days after verifying your user identity.</p>
       </div>
 
       <div className="content" style={{ display: language === 'chinese' ? 'block' : 'none' }}>
-        <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>三五星球隐私政策</h1>
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>引言</h2>
-        <p style={{ marginBottom: '20px' }}>欢迎使用三五星球！我们重视用户的隐私和数据保护。本隐私政策旨在根据中国法律法规，透明地说明我们如何处理与您使用三五星球应用相关的信息。</p>
+        <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>隐私政策</h1>
+        <p style={{ marginBottom: '20px' }}>更新日期：2025年05月21日</p>
+        <p style={{ marginBottom: '20px' }}>深圳市叁伍幺发科技有限公司是知微宇宙平台（以下简称「知微宇宙」或「我们」）的运营者，本《隐私政策》阐述了知微宇宙将如何处理您的个人信息和隐私信息，并申明了知微宇宙对保护隐私的承诺，知微宇宙未来有可能根据信息处理情境不时更新或修改本政策。请您在向知微宇宙提交个人信息或隐私信息之前，阅读、了解并同意本政策和任何补充政策。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>信息收集</h2>
-        <p>为提供服务，本应用需要：</p>
-        <ul>
-          <li>网络连接用于账号验证和基本功能</li>
-          <li>摄像头权限用于AR功能（使用EasyAR SDK）</li>
-          <li>验证码用于用户认证</li>
-          <li>根据中国法规要求的实名信息</li>
-        </ul>
-        <p style={{ marginBottom: '20px' }}>除上述必要功能外，我们不会主动收集其他个人信息。</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>1.我们如何收集和使用个人信息</h2>
+        <p>我们会按照如下方式收集您在使用服务时主动提供的，以及通过自动化手段收集您在使用功能或接受服务过程中产生的信息：</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>第三方SDK</h2>
-        <p style={{ marginBottom: '20px' }}>本应用集成了EasyAR SDK以提供增强现实功能。虽然我们自身服务不收集个人信息，但无法保证第三方SDK的数据收集行为。请参考EasyAR的隐私政策了解详情。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.1 注册、登录、认证</h3>
+        <p>当您注册、登录知微宇宙及相关服务时，您可以通过手机号创建帐号，收集这些信息是为了帮助您更好的使用知微宇宙APP的核心业务功能。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>数据使用与存储</h2>
-        <p>所有收集的信息仅用于：</p>
-        <ul>
-          <li>用户认证和账号安全</li>
-          <li>提供核心应用功能</li>
-          <li>遵守中国法律法规</li>
-        </ul>
-        <p style={{ marginBottom: '20px' }}>数据安全存储在中国大陆境内的服务器上。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.2 播放浏览</h3>
+        <p>存储权限：当您使用分享、保存图片到相册等功能时，我们会向您申请获取此权限，如您关闭存储授权，您将可能无法使用对应功能，但不影响您继续使用我们提供的其他服务。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>数据安全</h2>
-        <p style={{ marginBottom: '20px' }}>我们采取适当的技术和管理措施保护用户信息，包括加密和访问控制。但请注意，任何互联网传输或存储系统都无法保证100%安全。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.3 相机和相册权限</h3>
+        <p>相机权限：平行宇宙模块AR探索功能需要使用相机扫描物体，如您关闭相机授权，您将可能无法使用对应功能，但不影响您继续使用我们提供的其他服务。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>未成年人保护</h2>
-        <p style={{ marginBottom: '20px' }}>根据《未成年人保护法》，14岁以下用户使用我们的服务需获得监护人同意。未经适当授权，我们不会故意收集未成年人的个人信息。</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2.我们如何使用Cookie等同类技术</h2>
+        <p>Cookie 和设备信息标识等同类技术是互联网中普遍使用的技术。当您使用知微宇宙及相关服务时，我们可能会使用相关技术向您的设备发送一个或多个Cookie 或匿名标识符，以收集、标识您访问、使用本产品时的信息。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>政策变更</h2>
-        <p style={{ marginBottom: '20px' }}>我们可能根据业务实践或法律要求更新本隐私政策。变更后继续使用本应用即表示接受修订后的政策。</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>3.我们如何共享、转让、公开披露个人信息</h2>
+        <p>未经您的同意，我们不会共享您的个人信息，除非共享的个人信息是去标识化处理后的信息，且共享第三方无法重新识别此类信息的自然人主体。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>联系我们</h2>
-        <p style={{ marginBottom: '20px' }}>如对本隐私政策有任何疑问，或希望行使中国法律赋予的权利，请联系深圳市三五幺发科技有限公司：hello@swyf.com</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4.我们如何存储个人信息</h2>
+        <p>我们依照法律法规的规定，将在境内运营过程中收集和产生的您的个人信息存储于中华人民共和国境内。目前，我们不会将上述信息传输至境外，如果我们向境外传输，我们将会遵循相关国家规定或者征求您的同意。</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>5.我们如何保护个人信息的安全</h2>
+        <p>我们非常重视您个人信息的安全，将努力采取合理的安全措施（包括技术方面和管理方面）来保护您的个人信息，防止您提供的个人信息被不当使用或在未经授权的情况下被访问、公开披露、使用、修改、损坏、丢失或泄漏。</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>6.管理您的个人信息</h2>
+        <p>我们非常重视您对个人信息的管理，并尽全力保护您对于您个人信息的查询、访问、修改、删除、撤回同意授权、注销帐号、投诉举报以及设置隐私功能的相关权利，以使您有能力保障您的隐私和信息安全。</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7.未成年人条款</h2>
+        <p>若您是未满18周岁的未成年人，在使用知微宇宙及相关服务前，应在您的父母或其他监护人监护、指导下共同阅读并同意本隐私政策。</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8.隐私政策的修订和通知</h2>
+        <p>为了给您提供更好的服务，知微宇宙及相关服务将不时更新与变化，我们会适时对本隐私政策进行修订，这些修订构成本隐私政策的一部分并具有等同于本隐私政策的效力，未经您明确同意，我们不会削减您依据当前生效的本隐私政策所应享受的权利。</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9.联系我们</h2>
+        <p>如果您对个人信息保护问题有投诉、建议、疑问，您可以将问题发送至（3518@sanwuyaoba.com）或邮寄至下列地址：</p>
+        <p>广东省东莞市东莞市长安镇龙光江南大境一期7栋404</p>
+        <p>我们将尽快审核所涉问题，并在验证您的用户身份后的十五个工作日内回复。</p>
       </div>
     </div>
   );
