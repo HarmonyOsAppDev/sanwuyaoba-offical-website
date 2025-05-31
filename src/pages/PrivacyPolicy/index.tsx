@@ -50,7 +50,7 @@ const PrivacyPolicy: React.FC = () => {
       <div className="content" style={{ display: language === 'english' ? 'block' : 'none' }}>
         <h1 style={{ fontSize: '24px', fontWeight: 'bold', marginBottom: '20px' }}>Privacy Policy</h1>
         <p style={{ marginBottom: '20px' }}>Last Updated: 20/05/2025</p>
-        <p style={{ marginBottom: '20px' }}>Shenzhen Sanwu Yifa Technology Co., Ltd. is the operator of the Zhiwei Universe platform (hereinafter referred to as "Zhiwei Universe" or "we"). This Privacy Policy explains how Zhiwei Universe will handle your personal information and privacy information, and declares our commitment to privacy protection. Zhiwei Universe may update or modify this policy from time to time based on information processing scenarios. Please read, understand and agree to this policy and any supplementary policies before submitting your personal information or privacy information to Zhiwei Universe.</p>
+        <p style={{ marginBottom: '20px' }}>Shenzhen Sanwu Yaofa Technology Co., Ltd. is the operator of the AstroPearl platform (hereinafter referred to as "AstroPearl" or "we"). This Privacy Policy explains how AstroPearl will handle your personal information and privacy information, and declares our commitment to privacy protection. AstroPearl may update or modify this policy from time to time based on information processing scenarios. Please read, understand and agree to this policy and any supplementary policies before submitting your personal information or privacy information to AstroPearl.</p>
         
         <p style={{ marginBottom: '20px' }}>This privacy policy will help you understand:</p>
         <ul style={{ marginBottom: '20px' }}>
@@ -58,14 +58,14 @@ const PrivacyPolicy: React.FC = () => {
           <li>When you use or enable related functions or use services, we will collect and use relevant information as necessary to realize the functions and services. Unless it is necessary information required for basic business functions or according to laws and regulations, you can refuse to provide it without affecting other functions or services. We will explain which information is necessary in the privacy policy.</li>
           <li>If you are not logged in, we will use the device identifier information to ensure the basic function of information push. If you are logged in, we will implement information push based on your account information.</li>
           <li>Precise location, camera, and album permissions will not be enabled by default. They will only be used when you explicitly authorize them for specific functions or services, and you can also withdraw your authorization. It is particularly important to note that even after your authorization, we will not collect your information when these sensitive permissions are not needed for related functions or services.</li>
-          <li>This privacy policy applies to your access and use of our products and services through the Zhiwei Universe application and official website.</li>
+          <li>This privacy policy applies to your access and use of our products and services through the AstroPearl application and official website.</li>
         </ul>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>1. How We Collect and Use Personal Information</h2>
         <p>We collect information that you actively provide when using our services, as well as information generated through automated means during your use of features or services:</p>
         
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.1 Registration, Login, and Authentication</h3>
-        <p>When you register or log in to Zhiwei Universe and related services, you can create an account using your phone number. We collect this information to help you better use the core business functions of the Zhiwei Universe APP.</p>
+        <p>When you register or log in to AstroPearl and related services, you can create an account using your phone number. We collect this information to help you better use the core business functions of the AstroPearl APP.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.2 Playback and Browsing</h3>
         <p>Storage permission: When you use features such as sharing and saving images to albums, we will request this permission. If you disable storage authorization, you may not be able to use these features, but this will not affect your continued use of other services we provide.</p>
@@ -92,7 +92,7 @@ const PrivacyPolicy: React.FC = () => {
         <p>To ensure that this application can normally receive broadcast information pushed by the client when it is closed or running in the background, this application must use (self-start) capability, which will exist at a certain frequency through the system to send broadcasts to wake up this application for self-start or associated start behavior, which is necessary for implementing functions and services.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.8 Changes in Collection and Use of Personal Information</h3>
-        <p>Please understand that as our business develops, we may adjust and change the functions and services provided by Zhiwei Universe. In principle, when new functions or services are related to our current functions or services, the collection and use of personal information will have a direct or reasonable connection with the original processing purpose. In scenarios where there is no direct or reasonable connection with the original processing purpose, we will inform you again and obtain your consent before collecting and using your personal information.</p>
+        <p>Please understand that as our business develops, we may adjust and change the functions and services provided by AstroPearl. In principle, when new functions or services are related to our current functions or services, the collection and use of personal information will have a direct or reasonable connection with the original processing purpose. In scenarios where there is no direct or reasonable connection with the original processing purpose, we will inform you again and obtain your consent before collecting and using your personal information.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.9 Legally Exempted Collection and Use of Personal Information</h3>
         <p>Please understand that in the following circumstances, according to laws and regulations and relevant national standards, we may collect and use your personal information without your authorization and consent:</p>
@@ -110,8 +110,38 @@ const PrivacyPolicy: React.FC = () => {
           <li>Other circumstances stipulated by laws and regulations.</li>
         </ul>
 
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 Third-Party SDK Usage</h3>
+        <p>Our application integrates third-party SDKs to provide specific functionalities. These SDKs may collect and process certain information. Below is a detailed list of the SDKs we use and their data collection practices:</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 AR SDK</h4>
+        <p>We use EasyAR SDK and Unity SDK to provide augmented reality features. These SDKs may collect:</p>
+        <ul>
+          <li>Camera access for AR functionality</li>
+          <li>Device motion and orientation data</li>
+          <li>Basic device information for compatibility purposes</li>
+          <li>Unity SDK may collect device information for performance optimization</li>
+          <li>EasyAR SDK may collect usage statistics for service improvement</li>
+        </ul>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 Analytics SDK</h4>
+        <p>We use analytics SDKs to improve our services. These SDKs may collect:</p>
+        <ul>
+          <li>Usage statistics and crash reports</li>
+          <li>Device information (model, OS version)</li>
+          <li>Performance metrics</li>
+        </ul>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Storage SDK</h4>
+        <p>We use storage SDKs for data management. These SDKs may collect:</p>
+        <ul>
+          <li>Storage access permissions</li>
+          <li>File operation logs</li>
+        </ul>
+
+        <p>Please note that these SDKs are essential for providing our core services. We carefully select our SDK providers and ensure they comply with relevant privacy laws and regulations. You can control the permissions granted to these SDKs through your device settings.</p>
+
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. How We Use Cookies and Similar Technologies</h2>
-        <p>Cookies and device information identifiers are commonly used technologies on the internet. When you use Zhiwei Universe and related services, we may use related technologies to send one or more cookies or anonymous identifiers to your device to collect and identify information about your access and use of our products. We promise not to use cookies for any purpose other than those described in this privacy policy.</p>
+        <p>Cookies and device information identifiers are commonly used technologies on the internet. When you use AstroPearl and related services, we may use related technologies to send one or more cookies or anonymous identifiers to your device to collect and identify information about your access and use of our products. We promise not to use cookies for any purpose other than those described in this privacy policy.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.1 Ensuring Product and Service Security and Efficient Operation</h3>
         <p>We may set cookies or anonymous identifiers for authentication and security purposes to confirm whether you are securely logged into the service or whether you are encountering theft, fraud, or other illegal activities. These technologies will also help us improve service efficiency and enhance login and response speeds.</p>
@@ -166,7 +196,7 @@ const PrivacyPolicy: React.FC = () => {
         <p>We store your personal information collected and generated during our operations in mainland China in accordance with laws and regulations. Currently, we will not transmit the above information overseas. If we need to transmit information overseas, we will follow relevant national regulations or seek your consent.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>4.2 Storage Period</h3>
-        <p>We only retain your personal information for the period necessary to provide Zhiwei Universe and its services: Your relevant information will be retained during the period when your account is not cancelled. After the necessary period, we will delete or anonymize your personal information, unless otherwise required by laws and regulations.</p>
+        <p>We only retain your personal information for the period necessary to provide AstroPearl and its services: Your relevant information will be retained during the period when your account is not cancelled. After the necessary period, we will delete or anonymize your personal information, unless otherwise required by laws and regulations.</p>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>5. How We Protect Personal Information Security</h2>
         <p>a. We attach great importance to the security of your personal information and will make reasonable security measures (including technical and management aspects) to protect your personal information from improper use or unauthorized access, public disclosure, use, modification, damage, loss, or leakage.</p>
@@ -175,7 +205,7 @@ const PrivacyPolicy: React.FC = () => {
         <p>d. Although we have taken the above reasonable and effective measures and have complied with the standards required by relevant laws and regulations, please understand that due to technical limitations and possible various malicious means, in the internet industry, even if we do our best to strengthen security measures, we cannot always guarantee 100% security of information. We will do our best to ensure the security of the personal information you provide to us.</p>
         <p>e. You understand that the systems and communication networks you use to access our services may have problems due to factors beyond our control.</p>
         <p>f. We will develop emergency response plans and immediately activate them when user information security incidents occur, striving to prevent the impact and consequences of these security incidents from expanding. Once a user information security incident (leakage, loss) occurs, we will inform you in accordance with the requirements of laws and regulations: the basic situation of the security incident and possible impacts, measures we have taken or will take, suggestions for you to prevent and reduce risks, and remedial measures for you. We will promptly inform you of the relevant situation of the incident through push notifications, emails, letters, text messages, and related forms. When it is difficult to inform each person individually, we will take reasonable and effective ways to publish announcements. At the same time, we will report the handling of user information security incidents to relevant regulatory departments as required.</p>
-        <p>g. Once you leave Zhiwei Universe and related services to browse or use other websites, services, and content resources, we will not have the ability or direct obligation to protect any personal information you submit in software and websites outside of Zhiwei Universe and related services, regardless of whether your login, browsing, or use of the above software and websites is based on links or guidance from Zhiwei Universe.</p>
+        <p>g. Once you leave AstroPearl and related services to browse or use other websites, services, and content resources, we will not have the ability or direct obligation to protect any personal information you submit in software and websites outside of AstroPearl and related services, regardless of whether your login, browsing, or use of the above software and websites is based on links or guidance from AstroPearl.</p>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>6. Managing Your Personal Information</h2>
         <p>We highly value your management of personal information and will do our best to protect your rights to query, access, modify, delete, withdraw consent authorization, cancel accounts, complain and report, and set privacy functions, so that you can protect your privacy and information security.</p>
@@ -189,7 +219,7 @@ const PrivacyPolicy: React.FC = () => {
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.2 Accessing, Deleting, and Correcting Your Personal Information</h3>
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.1 Accessing Personal Account Information</h4>
-        <p>You can query and access your username. To protect your privacy, the edit profile function is not yet open, and real-name authentication is not required. The Zhiwei Universe APP platform is only for a more convenient AR experience.</p>
+        <p>You can query and access your username. To protect your privacy, the edit profile function is not yet open, and real-name authentication is not required. The AstroPearl APP platform is only for a more convenient AR experience.</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.2 Querying, Accessing, Correcting, and Deleting Information</h4>
         <p>For security and identity recognition considerations, you may not be able to independently modify certain initial registration information submitted during registration (such as information after real-name authentication). If you do need to modify such information, please contact us, and we will review the issues involved as soon as possible and reply promptly after verifying your user identity.</p>
@@ -202,20 +232,20 @@ const PrivacyPolicy: React.FC = () => {
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.5 Accessing Privacy Policy</h3>
         <p>a. You can view the full content of this privacy policy on the registration page, or in [My] - [Settings] - [Privacy Policy] after logging into your personal account.</p>
-        <p>b. Please understand that the Zhiwei Universe and related services described in this privacy policy may vary depending on your phone model, system version, software application version, mobile client, and other factors. The final products and services are subject to the Zhiwei Universe software and related services you use.</p>
+        <p>b. Please understand that the AstroPearl and related services described in this privacy policy may vary depending on your phone model, system version, software application version, mobile client, and other factors. The final products and services are subject to the AstroPearl software and related services you use.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.6 Informing You of Service Termination</h3>
         <p>If we stop operations, we will promptly stop collecting your personal information, notify you of the service termination through individual delivery or announcement, and delete or anonymize your personal information that we hold.</p>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. Minor Protection</h2>
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>7.1 General Terms for Minors</h3>
-        <p>a. If you are a minor under the age of 18, you should read and agree to this privacy policy under the guidance of your parents or other guardians before using Zhiwei Universe and related services.</p>
+        <p>a. If you are a minor under the age of 18, you should read and agree to this privacy policy under the guidance of your parents or other guardians before using AstroPearl and related services.</p>
         <p>b. We protect minors' personal information in accordance with relevant national laws and regulations. We will only collect, use, share, or disclose minors' personal information when permitted by law, with clear consent from parents or other guardians, or when necessary to protect minors. If we find that we have collected minors' personal information without prior verifiable consent from parents or other guardians, we will try to delete the relevant information as soon as possible. At the same time, we have established strict rules for collecting and using minors' information to protect the security of children's and adolescents' personal information.</p>
         <p>c. If you are a minor's guardian and have any questions about the minor's personal information under your guardianship, please contact us through the contact methods published in this privacy policy.</p>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. Privacy Policy Revision and Notification</h2>
-        <p>a. To provide you with better services, Zhiwei Universe and related services will be updated and changed from time to time. We will revise this privacy policy accordingly. These revisions constitute part of this privacy policy and have the same effect as this privacy policy. Without your explicit consent, we will not reduce your rights under the currently effective privacy policy.</p>
-        <p>b. After this privacy policy is updated, we will issue an updated version in Zhiwei Universe and remind you of the updated content through the official website (http://sanwuyaoba.com) or other appropriate methods before the updated terms take effect, so that you can understand the latest version of this privacy policy in a timely manner.</p>
+        <p>a. To provide you with better services, AstroPearl and related services will be updated and changed from time to time. We will revise this privacy policy accordingly. These revisions constitute part of this privacy policy and have the same effect as this privacy policy. Without your explicit consent, we will not reduce your rights under the currently effective privacy policy.</p>
+        <p>b. After this privacy policy is updated, we will issue an updated version in AstroPearl and remind you of the updated content through the official website (http://sanwuyaoba.com) or other appropriate methods before the updated terms take effect, so that you can understand the latest version of this privacy policy in a timely manner.</p>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. Contact Us</h2>
         <p>If you have any complaints, suggestions, or questions about personal information protection, you can send your questions to (3518@sanwuyaoba.com) or mail to the following address:</p>
@@ -286,8 +316,38 @@ const PrivacyPolicy: React.FC = () => {
           <li>法律法规规定的其他情形。</li>
         </ul>
 
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 第三方SDK使用说明</h3>
+        <p>我们的应用集成了第三方SDK以提供特定功能。这些SDK可能会收集和处理某些信息。以下是我们使用的SDK及其数据收集实践的详细说明：</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 AR SDK</h4>
+        <p>我们使用 EasyAR SDK 和 Unity SDK 来提供增强现实功能。这些SDK可能会收集：</p>
+        <ul>
+          <li>用于AR功能的相机访问权限</li>
+          <li>设备运动和方向数据</li>
+          <li>用于兼容性目的的基本设备信息</li>
+          <li>Unity SDK 可能会收集设备信息用于性能优化</li>
+          <li>EasyAR SDK 可能会收集使用统计数据用于服务改进</li>
+        </ul>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 Analytics SDK</h4>
+        <p>We use analytics SDKs to improve our services. These SDKs may collect:</p>
+        <ul>
+          <li>Usage statistics and crash reports</li>
+          <li>Device information (model, OS version)</li>
+          <li>Performance metrics</li>
+        </ul>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Storage SDK</h4>
+        <p>We use storage SDKs for data management. These SDKs may collect:</p>
+        <ul>
+          <li>Storage access permissions</li>
+          <li>File operation logs</li>
+        </ul>
+
+        <p>Please note that these SDKs are essential for providing our core services. We carefully select our SDK providers and ensure they comply with relevant privacy laws and regulations. You can control the permissions granted to these SDKs through your device settings.</p>
+
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. 我们如何使用Cookie和类似技术</h2>
-        <p>Cookie和同类技术是互联网中的通用技术。当您使用知微宇宙及相关服务时，我们可能会使用相关技术向您的设备发送一个或多个Cookie或匿名标识符，以收集和标识您访问、使用本产品的信息。我们承诺，不会将Cookie用于本隐私政策所述目的之外的任何其他用途。</p>
+        <p>Cookies和设备信息标识符是互联网中的通用技术。当您使用知微宇宙及相关服务时，我们可能会使用相关技术向您的设备发送一个或多个Cookie或匿名标识符，以收集和标识您访问、使用本产品的信息。我们承诺，不会将Cookie用于本隐私政策所述目的之外的任何其他用途。</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.1 保障产品与服务的安全、高效运转</h3>
         <p>我们可能会设置认证与保障安全性的Cookie或匿名标识符，使我们确认您是否安全登录服务，或者是否遇到盗用、欺诈及其他不法行为。这些技术还会帮助我们改进服务效率，提升登录和响应速度。</p>
@@ -295,7 +355,7 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.2 帮助您获得更轻松的访问体验</h3>
         <p>使用此类技术可以帮助您省去重复您填写个人信息、输入搜索内容的步骤和流程（例如：记录搜索、表单填写）。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.3 清除Cookie</h3>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.3 Cookie清除</h3>
         <p>大多数浏览器均为用户提供了清除浏览器缓存数据的功能，您可以在浏览器设置功能中进行相应的数据清除操作。如您清除数据，您可能无法使用由我们提供的、依赖于Cookie的服务或相应功能。</p>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>3. 我们如何共享、转移、公开披露个人信息</h2>
@@ -318,23 +378,23 @@ const PrivacyPolicy: React.FC = () => {
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>3.1.3 帮助您参加营销推广活动</h4>
         <p>当您选择参加我们及我们的关联方或第三方举办的有关营销活动时，可能需要您提供姓名、通信地址、联系方式、银行账号。这些信息是敏感个人信息，拒绝提供可能会影响您参加相关活动，但不会影响其他功能。只有经过您的同意，我们才会将这些信息与关联方或第三方共享，以保障您在联合活动中获得体验一致的服务，或委托第三方及时向您兑现奖励。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.2 转移</h3>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.2 Transfer</h3>
         <p>a. 我们不会将您的个人信息转移给任何公司、组织和个人，但以下情况除外：</p>
         <p>b. 随着我们业务的持续发展，我们有可能进行合并、收购、资产转让或类似的交易，您的个人信息有可能作为此类交易的一部分而被转移。如发生变更，我们会要求新的持有您个人信息的公司、组织继续受本隐私政策的约束，否则我们将要求该公司、组织重新向您征求授权同意。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.3 公开披露</h3>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.3 Public Display</h3>
         <p>a. 我们不会公开披露您的信息，除非获得您的明确同意。</p>
         <p>b. 基于法律的披露：在法律、法律程序、诉讼或政府主管部门强制性要求的情况下，我们可能会公开披露您的个人信息。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.4 依法豁免征得同意共享、转让、公开披露的个人信息</h3>
-        <p>请您理解，在下列情形中，根据法律法规及国家标准，我们共享、转让、公开披露您的个人信息无需征得您的授权同意：</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.4 Legally Exempted Sharing, Transfer, and Public Disclosure of Personal Information</h3>
+        <p>Please understand that in the following circumstances, according to laws and regulations and national standards, we may share, transfer, or publicly disclose your personal information without your authorization and consent:</p>
         <ul>
-          <li>与国家安全、国防安全直接相关的；</li>
-          <li>与公共安全、公共卫生、重大公共利益直接相关的；</li>
-          <li>与犯罪侦查、起诉、审判和判决执行等直接相关的；</li>
-          <li>出于维护您或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；</li>
-          <li>您自行向社会公众公开的个人信息；</li>
-          <li>从合法公开披露的信息中收集个人信息的，如合法的新闻报道、政府信息公开等渠道。</li>
+          <li>Directly related to national security and national defense security;</li>
+          <li>Directly related to public security, public health, and major public interests;</li>
+          <li>Directly related to criminal investigation, prosecution, trial, and execution of judgments;</li>
+          <li>For the protection of your or other individuals' life, property, and other major legitimate rights and interests, but it is difficult to obtain the consent of the individual;</li>
+          <li>Personal information that you voluntarily disclose to the public;</li>
+          <li>Personal information collected from legally publicly disclosed information, such as legal news reports and government information disclosure channels.</li>
         </ul>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4. 我们如何存储个人信息</h2>
@@ -363,40 +423,40 @@ const PrivacyPolicy: React.FC = () => {
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.1.2 改变或撤回授权的信息处理</h4>
         <p>特定的业务功能和服务将需要您的信息才能得以完成，当您撤回同意或授权后，我们无法继续为您提供撤回同意或授权所对应的功能和服务，也不再处理您相应的个人信息。但您撤回同意或授权的决定，不会影响我们此前基于您的同意而开展的个人信息处理。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.2 访问、删除、更正您的个人信息</h3>
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.1 访问个人账号信息</h4>
-        <p>您可以查询、访问您的用户名，为保护您的隐私，编辑个人资料功能暂未开放，无需实名认证，知微宇宙APP平台仅用于更便捷的AR体验。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.2 Accessing, Deleting, and Correcting Your Personal Information</h3>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.1 Accessing Personal Account Information</h4>
+        <p>You can query and access your username. To protect your privacy, the edit profile function is not yet open, and real-name authentication is not required. The AstroPearl APP platform is only for a more convenient AR experience.</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.2 查询访问、更正、删除信息</h4>
-        <p>出于安全性和身份识别的考虑，您可能无法自主修改注册时提交的某些初始注册信息（如实名认证后信息）；如您确有必要修改该类信息，请您联系我们，我们会尽快审核所涉问题，并由专人验证您的用户身份后及时予以回复。</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.2 Querying, Accessing, Correcting, and Deleting Information</h4>
+        <p>For security and identity recognition considerations, you may not be able to independently modify certain initial registration information submitted during registration (such as information after real-name authentication). If you do need to modify such information, please contact us, and we will review the issues involved as soon as possible and reply promptly after verifying your user identity.</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.3 注销账号</h3>
-        <p>您可以在[我]-[设置]-[账号与安全]中注销账号。在您注销账号前，我们将验证您的个人身份、安全状态、设备信息等。您知悉并理解，注销账号的行为是不可逆的行为，当您注销账号后，我们将删除有关您的相关信息或进行匿名化处理，但法律法规另有规定的除外。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.3 Cancelling Account</h3>
+        <p>You can cancel your account in [Me] - [Settings] - [Account and Security]. Before you cancel your account, we will verify your personal identity, security status, device information, etc. You understand that account cancellation is an irreversible action. After you cancel your account, we will delete your relevant information or anonymize it, unless otherwise required by laws and regulations.</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.4 投诉举报</h3>
-        <p>您可以按照我们公示的制度进行投诉或举报。如果您认为您的个人信息权利可能受到侵害，或者发现侵害个人信息权利的线索，您可以在[我的]-[设置]-[反馈与帮助]中进入用户反馈界面与我们联系。我们核查后会在30日内反馈您的投诉与举报。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.4 Complaints and Reports</h3>
+        <p>You can make complaints or reports according to our published contact methods. If you believe that your personal information rights may be infringed, or if you discover clues about infringement of personal information rights, you can contact us in [My] - [Settings] - [Feedback and Help] to enter the user feedback interface. We will review and respond to your complaints and reports within 30 days.</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.5 访问隐私政策</h3>
-        <p>a. 您可以在注册页面，或者在登录个人账号后[我的]-[设置]-[隐私政策]中查看本隐私政策的全部内容。</p>
-        <p>b. 请您了解，本隐私政策中所述的知微宇宙及相关服务可能会根据您所使用的手机型号、系统版本、软件应用程序版本、移动客户端等因素而有所不同。最终的产品和服务以您所使用的知微宇宙软件及相关服务为准。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.5 Accessing Privacy Policy</h3>
+        <p>a. You can view the full content of this privacy policy on the registration page, or in [My] - [Settings] - [Privacy Policy] after logging into your personal account.</p>
+        <p>b. Please understand that the AstroPearl and related services described in this privacy policy may vary depending on your phone model, system version, software application version, mobile client, and other factors. The final products and services are subject to the AstroPearl software and related services you use.</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.6 停止运营向您告知</h3>
-        <p>如我们停止运营，我们将及时停止收集您个人信息的活动，将停止运营的通知以逐一送达或公告的形式通知您，并对所持有的个人信息进行删除或匿名化处理。</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.6 Informing You of Service Termination</h3>
+        <p>If we stop operations, we will promptly stop collecting your personal information, notify you of the service termination through individual delivery or announcement, and delete or anonymize your personal information that we hold.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. 未成年人保护</h2>
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>7.1 未成年人通用条款</h3>
-        <p>a. 若您是未满18周岁的未成年人，在使用知微宇宙及相关服务前，应在您的父母或其他监护人监护、指导下共同阅读并同意本隐私政策。</p>
-        <p>b. 我们根据国家相关法律法规的规定保护未成年人的个人信息，只会在法律允许、父母或其他监护人明确同意或保护未成年人所必要的情况下收集、使用、共享或披露未成年人的个人信息；如果我们发现在未事先获得可证实的父母同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关数据。</p>
-        <p>c. 若您是未成年人的监护人，当您对您所监护的未成年人的个人信息有相关疑问时，请通过本隐私政策公示的联系方式与我们联系。</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. Minor Protection</h2>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>7.1 General Terms for Minors</h3>
+        <p>a. If you are a minor under the age of 18, you should read and agree to this privacy policy under the guidance of your parents or other guardians before using AstroPearl and related services.</p>
+        <p>b. We protect minors' personal information in accordance with relevant national laws and regulations. We will only collect, use, share, or disclose minors' personal information when permitted by law, with clear consent from parents or other guardians, or when necessary to protect minors. If we find that we have collected minors' personal information without prior verifiable consent from parents or other guardians, we will try to delete the relevant information as soon as possible. At the same time, we have established strict rules for collecting and using minors' information to protect the security of children's and adolescents' personal information.</p>
+        <p>c. If you are a minor's guardian and have any questions about the minor's personal information under your guardianship, please contact us through the contact methods published in this privacy policy.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. 隐私政策的修订和通知</h2>
-        <p>a. 为了给您提供更好的服务，知微宇宙及相关服务将不时更新与变化，我们会适时对本隐私政策进行修订，这些修订构成本隐私政策的一部分并具有等同于本隐私政策的效力，本隐私政策更新后，我们会在知微宇宙发出更新版本并在更新后的条款生效前通过官方网站（http://sanwuyaoba.com）公告或以其他适当方式提醒您相关内容的更新，以便您及时了解本隐私政策的最新版本。</p>
-        <p>b. 对于重大变更，我们还会提供更为显著的通知（我们会通过包括但不限于邮件、短信、私信或在浏览页面做特别提示等方式，说明隐私政策的具体变更内容）。</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. Privacy Policy Revision and Notification</h2>
+        <p>a. To provide you with better services, AstroPearl and related services will be updated and changed from time to time. We will revise this privacy policy accordingly. These revisions constitute part of this privacy policy and have the same effect as this privacy policy. Without your explicit consent, we will not reduce your rights under the currently effective privacy policy.</p>
+        <p>b. After this privacy policy is updated, we will issue an updated version in AstroPearl and remind you of the updated content through the official website (http://sanwuyaoba.com) or other appropriate methods before the updated terms take effect, so that you can understand the latest version of this privacy policy in a timely manner.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. 联系我们</h2>
-        <p>如果您对个人信息保护问题有投诉、建议、疑问，您可以将问题发送至（3518@sanwuyaoba.com）或寄到如下地址：</p>
-        <p>广东省东莞市长安镇长光江南大境一期7栋404室</p>
-        <p>我们会在收到您的问题后尽快审核所涉问题，并在验证您的用户身份后的十五个工作日内回复。</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. Contact Us</h2>
+        <p>If you have any complaints, suggestions, or questions about personal information protection, you can send your questions to (3518@sanwuyaoba.com) or mail to the following address:</p>
+        <p>Room 404, Building 7, Phase 1, Longguang Jiangnan Dajing, Chang'an Town, Dongguan City, Guangdong Province</p>
+        <p>We will review the issues involved as soon as possible and reply within fifteen working days after verifying your user identity.</p>
       </div>
     </div>
   );
