@@ -330,21 +330,21 @@ const PrivacyPolicy: React.FC = () => {
         </ul>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 Analytics SDK</h4>
-        <p>We use analytics SDKs to improve our services. These SDKs may collect:</p>
+        <p>我们使用分析SDK来改进我们的服务。这些SDK可能会收集：</p>
         <ul>
-          <li>Usage statistics and crash reports</li>
-          <li>Device information (model, OS version)</li>
-          <li>Performance metrics</li>
+          <li>使用统计数据和崩溃报告</li>
+          <li>设备信息（型号、操作系统版本）</li>
+          <li>性能指标</li>
         </ul>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Storage SDK</h4>
-        <p>We use storage SDKs for data management. These SDKs may collect:</p>
+        <p>我们使用存储SDK进行数据管理。这些SDK可能会收集：</p>
         <ul>
-          <li>Storage access permissions</li>
-          <li>File operation logs</li>
+          <li>存储访问权限</li>
+          <li>文件操作日志</li>
         </ul>
 
-        <p>Please note that these SDKs are essential for providing our core services. We carefully select our SDK providers and ensure they comply with relevant privacy laws and regulations. You can control the permissions granted to these SDKs through your device settings.</p>
+        <p>请注意，这些SDK对于提供我们的核心服务是必不可少的。我们谨慎选择SDK提供商，并确保他们遵守相关的隐私法律法规。您可以通过设备设置控制授予这些SDK的权限。</p>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. 我们如何使用Cookie和类似技术</h2>
         <p>Cookies和设备信息标识符是互联网中的通用技术。当您使用知微宇宙及相关服务时，我们可能会使用相关技术向您的设备发送一个或多个Cookie或匿名标识符，以收集和标识您访问、使用本产品的信息。我们承诺，不会将Cookie用于本隐私政策所述目的之外的任何其他用途。</p>
@@ -386,15 +386,15 @@ const PrivacyPolicy: React.FC = () => {
         <p>a. 我们不会公开披露您的信息，除非获得您的明确同意。</p>
         <p>b. 基于法律的披露：在法律、法律程序、诉讼或政府主管部门强制性要求的情况下，我们可能会公开披露您的个人信息。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.4 Legally Exempted Sharing, Transfer, and Public Disclosure of Personal Information</h3>
-        <p>Please understand that in the following circumstances, according to laws and regulations and national standards, we may share, transfer, or publicly disclose your personal information without your authorization and consent:</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.4 依法豁免征得同意共享、转移、公开披露的个人信息</h3>
+        <p>请您理解，在下列情形中，根据法律法规及相关国家标准，我们共享、转移、公开披露您的个人信息无需征得您的授权同意：</p>
         <ul>
-          <li>Directly related to national security and national defense security;</li>
-          <li>Directly related to public security, public health, and major public interests;</li>
-          <li>Directly related to criminal investigation, prosecution, trial, and execution of judgments;</li>
-          <li>For the protection of your or other individuals' life, property, and other major legitimate rights and interests, but it is difficult to obtain the consent of the individual;</li>
-          <li>Personal information that you voluntarily disclose to the public;</li>
-          <li>Personal information collected from legally publicly disclosed information, such as legal news reports and government information disclosure channels.</li>
+          <li>与国家安全、国防安全直接相关的；</li>
+          <li>与公共安全、公共卫生、重大公共利益直接相关的；</li>
+          <li>与犯罪侦查、起诉、审判和判决执行等直接相关的；</li>
+          <li>出于维护您或其他个人的生命、财产等重大合法权益但又很难得到本人同意的；</li>
+          <li>您自行向社会公众公开的个人信息；</li>
+          <li>从合法公开披露的信息中收集的您的个人信息，如合法的新闻报道、政府信息公开等渠道。</li>
         </ul>
 
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4. 我们如何存储个人信息</h2>
@@ -423,40 +423,41 @@ const PrivacyPolicy: React.FC = () => {
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.1.2 改变或撤回授权的信息处理</h4>
         <p>特定的业务功能和服务将需要您的信息才能得以完成，当您撤回同意或授权后，我们无法继续为您提供撤回同意或授权所对应的功能和服务，也不再处理您相应的个人信息。但您撤回同意或授权的决定，不会影响我们此前基于您的同意而开展的个人信息处理。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.2 Accessing, Deleting, and Correcting Your Personal Information</h3>
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.1 Accessing Personal Account Information</h4>
-        <p>You can query and access your username. To protect your privacy, the edit profile function is not yet open, and real-name authentication is not required. The AstroPearl APP platform is only for a more convenient AR experience.</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.2 访问、删除和更正您的个人信息</h3>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.1 访问个人账户信息</h4>
+        <p>您可以查询和访问您的用户名。为了保护您的隐私，编辑个人资料功能尚未开放，且不需要实名认证。知微宇宙APP平台仅用于提供更便捷的AR体验。</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.2 Querying, Accessing, Correcting, and Deleting Information</h4>
-        <p>For security and identity recognition considerations, you may not be able to independently modify certain initial registration information submitted during registration (such as information after real-name authentication). If you do need to modify such information, please contact us, and we will review the issues involved as soon as possible and reply promptly after verifying your user identity.</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>6.2.2 查询、访问、更正和删除信息</h4>
+        <p>出于安全和身份识别的考虑，您可能无法独立修改注册时提交的某些初始注册信息（如实名认证后的信息）。如果您确实需要修改此类信息，请联系我们，我们将在验证您的用户身份后尽快审核相关问题并及时回复。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.3 Cancelling Account</h3>
-        <p>You can cancel your account in [Me] - [Settings] - [Account and Security]. Before you cancel your account, we will verify your personal identity, security status, device information, etc. You understand that account cancellation is an irreversible action. After you cancel your account, we will delete your relevant information or anonymize it, unless otherwise required by laws and regulations.</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.3 注销账户</h3>
+        <p>您可以在[我的]-[设置]-[账户与安全]中注销您的账户。在您注销账户之前，我们将验证您的个人身份、安全状态、设备信息等。您理解注销账户是不可逆的操作。在您注销账户后，我们将删除您的相关信息或进行匿名化处理，除非法律法规另有规定。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.4 Complaints and Reports</h3>
-        <p>You can make complaints or reports according to our published contact methods. If you believe that your personal information rights may be infringed, or if you discover clues about infringement of personal information rights, you can contact us in [My] - [Settings] - [Feedback and Help] to enter the user feedback interface. We will review and respond to your complaints and reports within 30 days.</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.4 投诉与举报</h3>
+        <p>您可以通过我们公布的投诉渠道进行投诉或举报。如果您认为您的个人信息权利可能受到侵害，或者发现侵害个人信息权利的线索，您可以在[我的]-[设置]-[反馈与帮助]中与我们联系，进入用户反馈界面。我们将在30天内审核并回复您的投诉和举报。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.5 Accessing Privacy Policy</h3>
-        <p>a. You can view the full content of this privacy policy on the registration page, or in [My] - [Settings] - [Privacy Policy] after logging into your personal account.</p>
-        <p>b. Please understand that the AstroPearl and related services described in this privacy policy may vary depending on your phone model, system version, software application version, mobile client, and other factors. The final products and services are subject to the AstroPearl software and related services you use.</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.5 访问隐私政策</h3>
+        <p>a. 您可以在注册页面查看本隐私政策的全部内容，或在登录个人账户后通过[我的]-[设置]-[隐私政策]查看。</p>
+        <p>b. 请您理解，本隐私政策中所述的知微宇宙及相关服务可能会根据您使用的手机型号、系统版本、软件应用程序版本、移动客户端等因素而有所不同。最终的产品和服务以您使用的知微宇宙软件及相关服务为准。</p>
 
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.6 Informing You of Service Termination</h3>
-        <p>If we stop operations, we will promptly stop collecting your personal information, notify you of the service termination through individual delivery or announcement, and delete or anonymize your personal information that we hold.</p>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.6 服务终止通知</h3>
+        <p>如果我们停止运营，我们将及时停止收集您的个人信息，通过单独通知或公告的方式告知您服务终止，并删除或匿名化处理我们持有的您的个人信息。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. Minor Protection</h2>
-        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>7.1 General Terms for Minors</h3>
-        <p>a. If you are a minor under the age of 18, you should read and agree to this privacy policy under the guidance of your parents or other guardians before using AstroPearl and related services.</p>
-        <p>b. We protect minors' personal information in accordance with relevant national laws and regulations. We will only collect, use, share, or disclose minors' personal information when permitted by law, with clear consent from parents or other guardians, or when necessary to protect minors. If we find that we have collected minors' personal information without prior verifiable consent from parents or other guardians, we will try to delete the relevant information as soon as possible. At the same time, we have established strict rules for collecting and using minors' information to protect the security of children's and adolescents' personal information.</p>
-        <p>c. If you are a minor's guardian and have any questions about the minor's personal information under your guardianship, please contact us through the contact methods published in this privacy policy.</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. 未成年人保护</h2>
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>7.1 未成年人通用条款</h3>
+        <p>a. 若您是未满18周岁的未成年人，在使用知微宇宙及相关服务前，应在您的父母或其他监护人监护、指导下共同阅读并同意本隐私政策。</p>
+        <p>b. 我们根据国家相关法律法规的规定保护未成年人的个人信息，只会在法律允许、父母或其他监护人明确同意或保护未成年人所必要的情况下收集、使用、共享或披露未成年人的个人信息。如果我们发现在未事先获得可证实的父母同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关数据。同时，我们制定了严格的未成年人信息收集使用规则，以保护儿童和青少年个人信息安全。</p>
+        <p>c. 若您是未成年人的监护人，当您对您所监护的未成年人的个人信息有相关疑问时，请通过本隐私政策公示的联系方式与我们联系。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. Privacy Policy Revision and Notification</h2>
-        <p>a. To provide you with better services, AstroPearl and related services will be updated and changed from time to time. We will revise this privacy policy accordingly. These revisions constitute part of this privacy policy and have the same effect as this privacy policy. Without your explicit consent, we will not reduce your rights under the currently effective privacy policy.</p>
-        <p>b. After this privacy policy is updated, we will issue an updated version in AstroPearl and remind you of the updated content through the official website (http://sanwuyaoba.com) or other appropriate methods before the updated terms take effect, so that you can understand the latest version of this privacy policy in a timely manner.</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. 隐私政策的修订和通知</h2>
+        <p>a. 为了给您提供更好的服务，知微宇宙及相关服务将不时更新与变化，我们会适时对本隐私政策进行修订，这些修订构成本隐私政策的一部分并具有等同于本隐私政策的效力。本隐私政策更新后，我们会在知微宇宙发出更新版本并在更新后的条款生效前通过官方网站（http://sanwuyaoba.com）或其他适当方式提醒您相关内容的更新，以便您及时了解本隐私政策的最新版本。</p>
+        <p>b. 对于重大变更，我们还会提供更为显著的通知（我们会通过包括但不限于邮件、短信、私信、在浏览页面做特别提示等方式，说明隐私政策的具体变更内容）。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. Contact Us</h2>
-        <p>If you have any complaints, suggestions, or questions about personal information protection, you can send your questions to (3518@sanwuyaoba.com) or mail to the following address:</p>
-        <p>Room 404, Building 7, Phase 1, Longguang Jiangnan Dajing, Chang'an Town, Dongguan City, Guangdong Province</p>
-        <p>We will review the issues involved as soon as possible and reply within fifteen working days after verifying your user identity.</p>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. 联系我们</h2>
+        <p>如果您对本隐私政策或您个人信息的相关事宜有任何问题、意见或建议，请通过以下方式与我们联系：</p>
+        <p>邮箱：3518@sanwuyaoba.com</p>
+        <p>地址：广东省东莞市长安镇长光江南大境一期7栋404室</p>
+        <p>我们会在验证您的用户身份后的十五个工作日内回复您的请求。</p>
       </div>
     </div>
   );
