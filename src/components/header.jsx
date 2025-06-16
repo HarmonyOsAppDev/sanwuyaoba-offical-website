@@ -73,6 +73,15 @@ export default function Header() {
         >
           应用介绍
         </Button>
+
+        <Button 
+          variant="ghost" 
+          className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors w-full justify-start"
+          onClick={() => handleNavigation('/company')}
+        >
+          公司介绍
+        </Button>
+
         <Button 
           variant="ghost" 
           className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors w-full justify-start"
