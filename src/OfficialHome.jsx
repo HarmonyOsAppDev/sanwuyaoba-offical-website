@@ -32,7 +32,7 @@ const App = () => {
             className="w-12 h-12"
           />
           <span className="text-lg font-bold text-white">
-            三五宇宙
+            知微宇宙
           </span>
         </div>
         {/* <Button variant="ghost" className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors">
