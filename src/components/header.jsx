@@ -53,6 +53,20 @@ export default function Header() {
       >
         联系我们
       </Button>
+      <Button 
+        variant="ghost" 
+        className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors"
+        onClick={() => handleNavigation('/privacy-policy')}
+      >
+        隐私政策
+      </Button>
+      <Button 
+        variant="ghost" 
+        className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors"
+        onClick={() => handleNavigation('/user-policy')}
+      >
+        用户协议
+      </Button>
     </div>
 
     {/* Mobile Menu Button */}
