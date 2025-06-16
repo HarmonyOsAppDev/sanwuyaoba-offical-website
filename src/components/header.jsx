@@ -16,12 +16,12 @@ export default function Header() {
 
 
   return (
-    <nav className="md:z-1 relative z-20 px-8 py-6 flex justify-between items-center backdrop-blur-sm border-b border-gray-800">
+    <nav className="md:z-1 relative z-20 px-4 md:px-8 py-4 md:py-6 flex justify-between items-center backdrop-blur-sm border-b border-gray-800">
     <div className="flex items-center gap-2">
       <img
         src={logoImage}
         alt="Logo"
-        className="w-12 h-12"
+        className="w-10 h-10 md:w-12 md:h-12"
         onClick={() => handleNavigation('/')}
       />
       {/* <span className="text-lg font-bold text-white">
@@ -71,18 +71,28 @@ export default function Header() {
 
     {/* Mobile Menu Button */}
     <button 
-      className="md:hidden text-gray-300 hover:text-white transition-colors"
+      className="md:hidden text-gray-300 hover:text-white transition-colors p-2"
       onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+      aria-label="Toggle menu"
     >
-      <i className={`fas ${isMobileMenuOpen ? 'fa-times' : 'fa-bars'} text-2xl`}></i>
+      <div className="w-6 h-5 relative flex flex-col justify-between">
+        <span className={`w-full h-0.5 bg-current transform transition-all duration-300 ${isMobileMenuOpen ? 'rotate-45 translate-y-2' : ''}`}></span>
+        <span className={`w-full h-0.5 bg-current transition-all duration-300 ${isMobileMenuOpen ? 'opacity-0' : ''}`}></span>
+        <span className={`w-full h-0.5 bg-current transform transition-all duration-300 ${isMobileMenuOpen ? '-rotate-45 -translate-y-2' : ''}`}></span>
+      </div>
     </button>
 
     {/* Mobile Menu */}
-    <div className={`md:hidden absolute top-full left-0 right-0 bg-gray-900/95 backdrop-blur-sm border-b border-gray-800 transition-all duration-300 ${isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2 pointer-events-none'}`}>
-      <div className="flex flex-col p-4">
+    <div 
+      className={`md:hidden fixed inset-0 bg-white transition-all duration-300 ease-in-out ${
+        isMobileMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+      }`}
+      style={{ top: '4rem' }}
+    >
+      <div className="flex flex-col p-6 space-y-4 bg-white">
         <Button 
           variant="ghost" 
-          className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors w-full justify-start"
+          className="!rounded-button text-lg font-medium cursor-pointer text-gray-700 hover:text-gray-900 transition-colors w-full justify-start py-4"
           onClick={() => handleNavigation('/introduction')}
         >
           应用介绍
@@ -90,7 +100,7 @@ export default function Header() {
 
         <Button 
           variant="ghost" 
-          className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors w-full justify-start"
+          className="!rounded-button text-lg font-medium cursor-pointer text-gray-700 hover:text-gray-900 transition-colors w-full justify-start py-4"
           onClick={() => handleNavigation('/company')}
         >
           公司介绍
@@ -98,10 +108,26 @@ export default function Header() {
 
         <Button 
           variant="ghost" 
-          className="!rounded-button text-md font-medium cursor-pointer text-gray-300 hover:text-white transition-colors w-full justify-start"
+          className="!rounded-button text-lg font-medium cursor-pointer text-gray-700 hover:text-gray-900 transition-colors w-full justify-start py-4"
           onClick={() => handleNavigation('/contact')}
         >
           联系我们
+        </Button>
+
+        <Button 
+          variant="ghost" 
+          className="!rounded-button text-lg font-medium cursor-pointer text-gray-700 hover:text-gray-900 transition-colors w-full justify-start py-4"
+          onClick={() => handleNavigation('/privacy-policy')}
+        >
+          隐私政策
+        </Button>
+
+        <Button 
+          variant="ghost" 
+          className="!rounded-button text-lg font-medium cursor-pointer text-gray-700 hover:text-gray-900 transition-colors w-full justify-start py-4"
+          onClick={() => handleNavigation('/user-policy')}
+        >
+          用户协议
         </Button>
       </div>
     </div>
