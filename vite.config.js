@@ -8,4 +8,15 @@ export default defineConfig({
     react(),
     tailwindcss(),
   ],
+  server: {
+    fs: {
+      // Allow serving files from one level up to the project root
+      allow: ['..']
+    }
+  },
+  preview: {
+    headers: {
+      'Cache-Control': 'public, max-age=0, must-revalidate'
+    }
+  }
 })
