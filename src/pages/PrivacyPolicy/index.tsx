@@ -83,7 +83,7 @@ const PrivacyPolicy: React.FC = () => {
         <p>We are committed to providing you with a safe and trustworthy product and usage environment. Providing quality and reliable services and information is our core goal.</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.6.1 Device Information and Log Information</h4>
-        <p>To ensure the secure operation of software and services, as well as the quality and efficiency of operations, we collect your hardware model, operating system version, IMEI, unique device identifier, network device hardware address, IP address, WLAN access point, Bluetooth, base station, software version number, network access method, type, status, network quality data, operation, usage, and service logs.</p>
+        <p>To ensure the secure operation of software and services, as well as the quality and efficiency of operations, we collect your hardware model, operating system version, IMEI, unique device identifier, network device hardware address, IP address, WLAN access point, Wi-Fi SSID, Wi-Fi BSSID, device IP address, Bluetooth, base station, software version number, network access method, type, status, network quality data, operation, usage, and service logs.</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.6.2 Application Information</h4>
         <p>To prevent malicious programs and ensure operational quality and efficiency, we collect information about installed applications or running processes, overall application operation, usage frequency, application crashes, overall installation usage, performance data, and application sources.</p>
@@ -289,7 +289,7 @@ const PrivacyPolicy: React.FC = () => {
         <p>我们致力于为您提供安全、可信的产品与使用环境，提供优质而可靠的服务与信息是我们的核心目标。</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.6.1 设备信息与日志信息</h4>
-        <p>为了保障软件与服务的安全运行、运营的质量及效率，我们会收集您的硬件型号、操作系统版本号、国际移动设备识别码、唯一设备标识符、网络设备硬件地址、IP 地址、WLAN接入点、蓝牙、基站、软件版本号、网络接入方式、类型、状态、网络质量数据、操作、使用、服务日志。</p>
+        <p>为了保障软件与服务的安全运行、运营的质量及效率，我们会收集您的硬件型号、操作系统版本号、国际移动设备识别码、唯一设备标识符、网络设备硬件地址、IP 地址、WLAN接入点、Wi-Fi SSID、Wi-Fi BSSID、设备IP地址、蓝牙、基站、软件版本号、网络接入方式、类型、状态、网络质量数据、操作、使用、服务日志。</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.6.2 应用信息</h4>
         <p>为了预防恶意程序、保障运营质量及效率，我们会收集安装的应用信息或正在运行的进程信息、应用程序的总体运行、使用情况与频率、应用崩溃情况、总体安装使用情况、性能数据、应用来源。</p>
