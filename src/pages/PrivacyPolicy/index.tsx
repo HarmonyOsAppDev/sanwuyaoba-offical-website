@@ -113,7 +113,19 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 Third-Party SDK Usage</h3>
         <p>Our application integrates third-party SDKs to provide specific functionalities. These SDKs may collect and process certain information. Below is a detailed list of the SDKs we use and their data collection practices:</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 AR SDK</h4>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 WeChat Login SDK</h4>
+        <p>We use WeChat Login SDK (provided by Tencent) to provide third-party login services. This SDK may collect and process:</p>
+        <ul>
+          <li>WeChat user identifier (OpenID/UnionID)</li>
+          <li>Basic profile information (nickname, avatar, when authorized by user)</li>
+          <li>Device information (device model, operating system version)</li>
+          <li>Network information (IP address for security purposes)</li>
+          <li>Usage statistics and performance data</li>
+          <li>Security verification data to prevent fraud</li>
+        </ul>
+        <p>Purpose: To enable secure third-party login functionality and improve user experience. For WeChat SDK privacy practices, please refer to <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=en_US&t=weixin_agreement&s=privacy" target="_blank">WeChat Privacy Policy</a>.</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 AR SDK</h4>
         <p>We use EasyAR SDK and Unity SDK to provide augmented reality features. These SDKs may collect:</p>
         <ul>
           <li>Camera access for AR functionality</li>
@@ -123,7 +135,7 @@ const PrivacyPolicy: React.FC = () => {
           <li>EasyAR SDK may collect usage statistics for service improvement</li>
         </ul>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 Analytics SDK</h4>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Analytics SDK</h4>
         <p>We use analytics SDKs to improve our services. These SDKs may collect:</p>
         <ul>
           <li>Usage statistics and crash reports</li>
@@ -131,7 +143,7 @@ const PrivacyPolicy: React.FC = () => {
           <li>Performance metrics</li>
         </ul>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Storage SDK</h4>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.4 Storage SDK</h4>
         <p>We use storage SDKs for data management. These SDKs may collect:</p>
         <ul>
           <li>Storage access permissions</li>
@@ -319,7 +331,19 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 第三方SDK使用说明</h3>
         <p>我们的应用集成了第三方SDK以提供特定功能。这些SDK可能会收集和处理某些信息。以下是我们使用的SDK及其数据收集实践的详细说明：</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 AR SDK</h4>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 微信登录SDK</h4>
+        <p>我们使用微信登录SDK（由腾讯公司提供）来提供第三方登录服务。该SDK可能会收集和处理：</p>
+        <ul>
+          <li>微信用户标识符（OpenID/UnionID）</li>
+          <li>基本资料信息（昵称、头像，需用户授权）</li>
+          <li>设备信息（设备型号、操作系统版本）</li>
+          <li>网络信息（IP地址，用于安全验证）</li>
+          <li>使用统计数据和性能数据</li>
+          <li>安全验证数据以防止欺诈</li>
+        </ul>
+        <p>目的：实现安全的第三方登录功能并改善用户体验。微信SDK隐私实践详情请参阅<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy" target="_blank">微信隐私政策</a>。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 AR SDK</h4>
         <p>我们使用 EasyAR SDK 和 Unity SDK 来提供增强现实功能。这些SDK可能会收集：</p>
         <ul>
           <li>用于AR功能的相机访问权限</li>
@@ -329,7 +353,7 @@ const PrivacyPolicy: React.FC = () => {
           <li>EasyAR SDK 可能会收集使用统计数据用于服务改进</li>
         </ul>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 Analytics SDK</h4>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Analytics SDK</h4>
         <p>我们使用分析SDK来改进我们的服务。这些SDK可能会收集：</p>
         <ul>
           <li>使用统计数据和崩溃报告</li>
@@ -337,7 +361,7 @@ const PrivacyPolicy: React.FC = () => {
           <li>性能指标</li>
         </ul>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Storage SDK</h4>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.4 Storage SDK</h4>
         <p>我们使用存储SDK进行数据管理。这些SDK可能会收集：</p>
         <ul>
           <li>存储访问权限</li>
