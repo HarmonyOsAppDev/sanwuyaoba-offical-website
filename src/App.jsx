@@ -6,6 +6,7 @@ import UserPolicy from './pages/UserPolicy'
 import Introduction from './pages/Introduction'
 import Contact from './pages/Contact'
 import Company from './pages/Company'
+import AppDownload from './pages/AppDownload'
 import WxDownload from './pages/WxDownload'
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
         <Route path="/introduction" element={<Introduction />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/company" element={<Company />} />
+        <Route path="/app-download" element={<AppDownload />} />
         <Route path="/wx-download" element={<WxDownload />} />
       </Routes>
     </div>
