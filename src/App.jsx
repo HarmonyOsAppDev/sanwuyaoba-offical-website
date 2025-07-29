@@ -8,8 +8,9 @@ import Contact from './pages/Contact'
 import Company from './pages/Company'
 import AppDownload from './pages/AppDownload'
 import WxDownload from './pages/WxDownload'
-function App() {
+import Feedback from './pages/Feedback'
 
+function App() {
   return (
     <div className="app">
       <Routes>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/company" element={<Company />} />
         <Route path="/app-download" element={<AppDownload />} />
         <Route path="/wx-download" element={<WxDownload />} />
+        <Route path="/feedback" element={<Feedback />} />
       </Routes>
     </div>
   )
