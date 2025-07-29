@@ -113,8 +113,8 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 Third-Party SDK Usage</h3>
         <p>Our application integrates third-party SDKs to provide specific functionalities. These SDKs may collect and process certain information. Below is a detailed list of the SDKs we use and their data collection practices:</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 WeChat Login SDK</h4>
-        <p>We use WeChat Login SDK (provided by Tencent) to provide third-party login services. This SDK may collect and process:</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 WeChat OpenSDK</h4>
+        <p>We use WeChat OpenSDK Android (provided by Shenzhen Tencent Computer Systems Company Limited) to provide third-party login services. This SDK may collect and process:</p>
         <ul>
           <li>WeChat user identifier (OpenID/UnionID)</li>
           <li>Basic profile information (nickname, avatar, when authorized by user)</li>
@@ -123,17 +123,20 @@ const PrivacyPolicy: React.FC = () => {
           <li>Usage statistics and performance data</li>
           <li>Security verification data to prevent fraud</li>
         </ul>
-        <p>Purpose: To enable secure third-party login functionality and improve user experience. For WeChat SDK privacy practices, please refer to <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=en_US&t=weixin_agreement&s=privacy" target="_blank">WeChat Privacy Policy</a>.</p>
+        <p>Purpose: To enable secure third-party login functionality and improve user experience. For WeChat SDK privacy practices, please refer to <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=en_US&t=weixin_agreement&s=privacy" target="_blank">WeChat Privacy Policy</a> and <a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8" target="_blank">WeChat Android SDK Privacy Policy</a>.</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 AR SDK</h4>
-        <p>We use EasyAR SDK and Unity SDK to provide augmented reality features. These SDKs may collect:</p>
+        <p>We use EasyAR SDK (provided by Sightp Inc.), HUAWEI AR Engine SDK (provided by Huawei Software Technologies Co., Ltd.), and Unity SDK to provide augmented reality features. These SDKs may collect:</p>
         <ul>
           <li>Camera access for AR functionality</li>
           <li>Device motion and orientation data</li>
           <li>Basic device information for compatibility purposes</li>
           <li>Unity SDK may collect device information for performance optimization</li>
           <li>EasyAR SDK may collect usage statistics for service improvement</li>
+          <li>HUAWEI AR Engine SDK may collect device sensor data and performance metrics for AR functionality</li>
         </ul>
+        <p>For EasyAR SDK privacy practices, please refer to <a href="https://www.easyar.cn/view/privacyPolicy.html" target="_blank">EasyAR Privacy Policy</a>.</p>
+        <p>For HUAWEI AR Engine SDK privacy practices, please refer to <a href="https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864" target="_blank">HUAWEI AR Engine Privacy Policy</a>.</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Analytics SDK</h4>
         <p>We use analytics SDKs to improve our services. These SDKs may collect:</p>
@@ -152,7 +155,44 @@ const PrivacyPolicy: React.FC = () => {
 
         <p>Please note that these SDKs are essential for providing our core services. We carefully select our SDK providers and ensure they comply with relevant privacy laws and regulations. You can control the permissions granted to these SDKs through your device settings.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. How We Use Cookies and Similar Technologies</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. Application Permissions We Request</h2>
+        <p>To provide you with complete application functionality and services, our application may request the following system permissions. We will only apply for these permissions when necessary and will clearly explain the purpose of each permission request:</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.1 Essential Permissions</h3>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>Internet Access (INTERNET)</h4>
+        <p><strong>Purpose:</strong> Essential for basic app functionality including user login, data synchronization, and content updates.</p>
+        <p><strong>Required:</strong> Yes - Without this permission, the app cannot function properly.</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>Network State Access (ACCESS_NETWORK_STATE)</h4>
+        <p><strong>Purpose:</strong> To detect network connectivity status and optimize data transmission.</p>
+        <p><strong>Required:</strong> Yes - Helps ensure stable service delivery.</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.2 Functional Permissions</h3>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>Camera (CAMERA)</h4>
+        <p><strong>Purpose:</strong> Required for AR functionality in the Parallel Universe module to scan objects and create augmented reality experiences.</p>
+        <p><strong>Required:</strong> Optional - Only requested when you use AR features. You can deny this permission and still use other app functions.</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>Storage Access (WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE)</h4>
+        <p><strong>Purpose:</strong> To save and share images, cache content for offline viewing, and store user preferences.</p>
+        <p><strong>Required:</strong> Optional - Only requested when you use features like saving images or sharing content.</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>Device Sensors (Accelerometer, Gyroscope, Magnetometer)</h4>
+        <p><strong>Purpose:</strong> Required for AR functionality to detect device motion and orientation for accurate AR rendering.</p>
+        <p><strong>Required:</strong> Optional - Only used during AR features. The app will function normally without these permissions for non-AR features.</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>Phone State (READ_PHONE_STATE)</h4>
+        <p><strong>Purpose:</strong> Used by WeChat OpenSDK for secure login authentication and device identification.</p>
+        <p><strong>Required:</strong> Optional - Only requested when you choose to use WeChat login. Alternative login methods are available.</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.3 Managing Permissions</h3>
+        <p>You can manage all these permissions through your device settings:</p>
+        <ul>
+          <li><strong>Android:</strong> Settings &gt; Apps &gt; AstroPearl &gt; Permissions</li>
+          <li><strong>iOS:</strong> Settings &gt; Privacy &gt; Select the relevant permission category</li>
+        </ul>
+        <p>Please note that denying certain permissions may limit some app functionality, but core features will remain accessible. We respect your choice and will only request permissions that are necessary for the features you choose to use.</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>3. How We Use Cookies and Similar Technologies</h2>
         <p>Cookies and device information identifiers are commonly used technologies on the internet. When you use AstroPearl and related services, we may use related technologies to send one or more cookies or anonymous identifiers to your device to collect and identify information about your access and use of our products. We promise not to use cookies for any purpose other than those described in this privacy policy.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.1 Ensuring Product and Service Security and Efficient Operation</h3>
@@ -164,7 +204,7 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.3 Cookie Clearing</h3>
         <p>Most browsers provide users with the function to clear browser cache data. You can perform corresponding data clearing operations in the browser settings. If you clear the data, you may not be able to use the services or corresponding functions provided by us that rely on cookies.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>3. How We Share, Transfer, and Disclose Personal Information</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4. How We Share, Transfer, and Disclose Personal Information</h2>
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.1 Sharing</h3>
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>3.1.1 Sharing Principles</h4>
         <p>a. Authorization and Consent Principle:</p>
@@ -190,7 +230,7 @@ const PrivacyPolicy: React.FC = () => {
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.3 Public Display</h3>
         <p>a. We will not publicly disclose your information unless required by national laws and regulations or with your consent. We will use security protection measures that meet industry standards when publicly disclosing your personal information.</p>
-        <p>b. When announcing penalties for违规帐号、欺诈行为进行处罚公告时，我们会披露相关帐号的信息。</p>
+        <p>b. When announcing penalties for violating accounts and fraudulent behavior, we will disclose relevant account information.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.4 Legally Exempted Sharing, Transfer, and Public Disclosure of Personal Information</h3>
         <p>Please understand that in the following circumstances, according to laws and regulations and national standards, we may share, transfer, or publicly disclose your personal information without your authorization and consent:</p>
@@ -203,14 +243,14 @@ const PrivacyPolicy: React.FC = () => {
           <li>Personal information collected from legally publicly disclosed information, such as legal news reports and government information disclosure channels.</li>
         </ul>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4. How We Store Personal Information</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>5. How We Store Personal Information</h2>
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>4.1 Storage Location</h3>
         <p>We store your personal information collected and generated during our operations in mainland China in accordance with laws and regulations. Currently, we will not transmit the above information overseas. If we need to transmit information overseas, we will follow relevant national regulations or seek your consent.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>4.2 Storage Period</h3>
         <p>We only retain your personal information for the period necessary to provide AstroPearl and its services: Your relevant information will be retained during the period when your account is not cancelled. After the necessary period, we will delete or anonymize your personal information, unless otherwise required by laws and regulations.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>5. How We Protect Personal Information Security</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>6. How We Protect Personal Information Security</h2>
         <p>a. We attach great importance to the security of your personal information and will make reasonable security measures (including technical and management aspects) to protect your personal information from improper use or unauthorized access, public disclosure, use, modification, damage, loss, or leakage.</p>
         <p>b. We use encryption technology, anonymization processing, and related reasonable and feasible means to protect your personal information, and use security protection mechanisms to prevent your personal information from being maliciously attacked.</p>
         <p>c. We establish a dedicated security department and data security process to protect your personal information security. We ensure that only authorized personnel can access your personal information, and we conduct security audits on data and technology from time to time.</p>
@@ -219,7 +259,7 @@ const PrivacyPolicy: React.FC = () => {
         <p>f. We will develop emergency response plans and immediately activate them when user information security incidents occur, striving to prevent the impact and consequences of these security incidents from expanding. Once a user information security incident (leakage, loss) occurs, we will inform you in accordance with the requirements of laws and regulations: the basic situation of the security incident and possible impacts, measures we have taken or will take, suggestions for you to prevent and reduce risks, and remedial measures for you. We will promptly inform you of the relevant situation of the incident through push notifications, emails, letters, text messages, and related forms. When it is difficult to inform each person individually, we will take reasonable and effective ways to publish announcements. At the same time, we will report the handling of user information security incidents to relevant regulatory departments as required.</p>
         <p>g. Once you leave AstroPearl and related services to browse or use other websites, services, and content resources, we will not have the ability or direct obligation to protect any personal information you submit in software and websites outside of AstroPearl and related services, regardless of whether your login, browsing, or use of the above software and websites is based on links or guidance from AstroPearl.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>6. Managing Your Personal Information</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. Managing Your Personal Information</h2>
         <p>We highly value your management of personal information and will do our best to protect your rights to query, access, modify, delete, withdraw consent authorization, cancel accounts, complain and report, and set privacy functions, so that you can protect your privacy and information security.</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.1 Changing or Withdrawing Authorization Scope</h3>
@@ -249,17 +289,17 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.6 Informing You of Service Termination</h3>
         <p>If we stop operations, we will promptly stop collecting your personal information, notify you of the service termination through individual delivery or announcement, and delete or anonymize your personal information that we hold.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. Minor Protection</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. Minor Protection</h2>
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>7.1 General Terms for Minors</h3>
         <p>a. If you are a minor under the age of 18, you should read and agree to this privacy policy under the guidance of your parents or other guardians before using AstroPearl and related services.</p>
         <p>b. We protect minors' personal information in accordance with relevant national laws and regulations. We will only collect, use, share, or disclose minors' personal information when permitted by law, with clear consent from parents or other guardians, or when necessary to protect minors. If we find that we have collected minors' personal information without prior verifiable consent from parents or other guardians, we will try to delete the relevant information as soon as possible. At the same time, we have established strict rules for collecting and using minors' information to protect the security of children's and adolescents' personal information.</p>
         <p>c. If you are a minor's guardian and have any questions about the minor's personal information under your guardianship, please contact us through the contact methods published in this privacy policy.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. Privacy Policy Revision and Notification</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. Privacy Policy Revision and Notification</h2>
         <p>a. To provide you with better services, AstroPearl and related services will be updated and changed from time to time. We will revise this privacy policy accordingly. These revisions constitute part of this privacy policy and have the same effect as this privacy policy. Without your explicit consent, we will not reduce your rights under the currently effective privacy policy.</p>
         <p>b. After this privacy policy is updated, we will issue an updated version in AstroPearl and remind you of the updated content through the official website (http://sanwuyaoba.com) or other appropriate methods before the updated terms take effect, so that you can understand the latest version of this privacy policy in a timely manner.</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. Contact Us</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>10. Contact Us</h2>
         <p>If you have any complaints, suggestions, or questions about personal information protection, you can send your questions to (3518@sanwuyaoba.com) or mail to the following address:</p>
         <p>Room 404, Building 7, Phase 1, Longguang Jiangnan Dajing, Chang'an Town, Dongguan City, Guangdong Province</p>
         <p>We will review the issues involved as soon as possible and reply within fifteen working days after verifying your user identity.</p>
@@ -331,8 +371,8 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 第三方SDK使用说明</h3>
         <p>我们的应用集成了第三方SDK以提供特定功能。这些SDK可能会收集和处理某些信息。以下是我们使用的SDK及其数据收集实践的详细说明：</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 微信登录SDK</h4>
-        <p>我们使用微信登录SDK（由腾讯公司提供）来提供第三方登录服务。该SDK可能会收集和处理：</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 微信OpenSDK</h4>
+        <p>我们使用微信OpenSDK Android（由深圳市腾讯计算机系统有限公司提供）来提供第三方登录服务。该SDK可能会收集和处理：</p>
         <ul>
           <li>微信用户标识符（OpenID/UnionID）</li>
           <li>基本资料信息（昵称、头像，需用户授权）</li>
@@ -341,17 +381,20 @@ const PrivacyPolicy: React.FC = () => {
           <li>使用统计数据和性能数据</li>
           <li>安全验证数据以防止欺诈</li>
         </ul>
-        <p>目的：实现安全的第三方登录功能并改善用户体验。微信SDK隐私实践详情请参阅<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy" target="_blank">微信隐私政策</a>。</p>
+        <p>目的：实现安全的第三方登录功能并改善用户体验。微信SDK隐私实践详情请参阅<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy" target="_blank">微信隐私政策</a>和<a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8" target="_blank">微信Android SDK隐私政策</a>。</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 AR SDK</h4>
-        <p>我们使用 EasyAR SDK 和 Unity SDK 来提供增强现实功能。这些SDK可能会收集：</p>
+        <p>我们使用 EasyAR SDK（由视辰信息科技（上海）有限公司提供）、HUAWEI AR Engine SDK（由华为软件技术有限公司提供）和 Unity SDK 来提供增强现实功能。这些SDK可能会收集：</p>
         <ul>
           <li>用于AR功能的相机访问权限</li>
           <li>设备运动和方向数据</li>
           <li>用于兼容性目的的基本设备信息</li>
           <li>Unity SDK 可能会收集设备信息用于性能优化</li>
           <li>EasyAR SDK 可能会收集使用统计数据用于服务改进</li>
+          <li>HUAWEI AR Engine SDK 可能会收集设备传感器数据和性能指标用于AR功能</li>
         </ul>
+        <p>EasyAR SDK隐私实践详情请参阅<a href="https://www.easyar.cn/view/privacyPolicy.html" target="_blank">EasyAR隐私政策</a>。</p>
+        <p>HUAWEI AR Engine SDK隐私实践详情请参阅<a href="https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864" target="_blank">华为AR Engine隐私政策</a>。</p>
 
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Analytics SDK</h4>
         <p>我们使用分析SDK来改进我们的服务。这些SDK可能会收集：</p>
@@ -370,7 +413,44 @@ const PrivacyPolicy: React.FC = () => {
 
         <p>请注意，这些SDK对于提供我们的核心服务是必不可少的。我们谨慎选择SDK提供商，并确保他们遵守相关的隐私法律法规。您可以通过设备设置控制授予这些SDK的权限。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. 我们如何使用Cookie和类似技术</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>2. 我们申请的应用权限</h2>
+        <p>为了向您提供完整的应用功能和服务，我们的应用可能会申请以下系统权限。我们仅在必要时申请这些权限，并会清楚说明每个权限申请的目的：</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.1 必要权限</h3>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>网络访问权限（INTERNET）</h4>
+        <p><strong>用途：</strong>应用基本功能必需，包括用户登录、数据同步和内容更新。</p>
+        <p><strong>是否必需：</strong>是 - 没有此权限应用无法正常运行。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>网络状态访问权限（ACCESS_NETWORK_STATE）</h4>
+        <p><strong>用途：</strong>检测网络连接状态，优化数据传输。</p>
+        <p><strong>是否必需：</strong>是 - 有助于确保稳定的服务提供。</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.2 功能权限</h3>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>相机权限（CAMERA）</h4>
+        <p><strong>用途：</strong>平行宇宙模块的AR功能需要使用相机扫描物体并创建增强现实体验。</p>
+        <p><strong>是否必需：</strong>可选 - 仅在您使用AR功能时申请。您可以拒绝此权限并继续使用其他应用功能。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>存储访问权限（WRITE_EXTERNAL_STORAGE, READ_EXTERNAL_STORAGE）</h4>
+        <p><strong>用途：</strong>保存和分享图片、缓存内容以供离线查看、存储用户偏好设置。</p>
+        <p><strong>是否必需：</strong>可选 - 仅在您使用保存图片或分享内容等功能时申请。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>设备传感器权限（加速度计、陀螺仪、磁力计）</h4>
+        <p><strong>用途：</strong>AR功能需要检测设备运动和方向以实现准确的AR渲染。</p>
+        <p><strong>是否必需：</strong>可选 - 仅在AR功能中使用。对于非AR功能，应用可正常运行而无需这些权限。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>电话状态权限（READ_PHONE_STATE）</h4>
+        <p><strong>用途：</strong>微信OpenSDK用于安全登录认证和设备识别。</p>
+        <p><strong>是否必需：</strong>可选 - 仅在您选择使用微信登录时申请。提供其他登录方式。</p>
+
+        <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.3 管理权限</h3>
+        <p>您可以通过设备设置管理所有这些权限：</p>
+        <ul>
+          <li><strong>Android：</strong>设置 &gt; 应用 &gt; 知微宇宙 &gt; 权限</li>
+          <li><strong>iOS：</strong>设置 &gt; 隐私 &gt; 选择相关权限类别</li>
+        </ul>
+        <p>请注意，拒绝某些权限可能会限制部分应用功能，但核心功能仍可正常使用。我们尊重您的选择，只会申请您选择使用的功能所必需的权限。</p>
+
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>3. 我们如何使用Cookie和类似技术</h2>
         <p>Cookies和设备信息标识符是互联网中的通用技术。当您使用知微宇宙及相关服务时，我们可能会使用相关技术向您的设备发送一个或多个Cookie或匿名标识符，以收集和标识您访问、使用本产品的信息。我们承诺，不会将Cookie用于本隐私政策所述目的之外的任何其他用途。</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.1 保障产品与服务的安全、高效运转</h3>
@@ -382,7 +462,7 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>2.3 Cookie清除</h3>
         <p>大多数浏览器均为用户提供了清除浏览器缓存数据的功能，您可以在浏览器设置功能中进行相应的数据清除操作。如您清除数据，您可能无法使用由我们提供的、依赖于Cookie的服务或相应功能。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>3. 我们如何共享、转移、公开披露个人信息</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4. 我们如何共享、转移、公开披露个人信息</h2>
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>3.1 共享</h3>
         <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>3.1.1 共享原则</h4>
         <p>a. 授权同意原则：</p>
@@ -421,14 +501,14 @@ const PrivacyPolicy: React.FC = () => {
           <li>从合法公开披露的信息中收集的您的个人信息，如合法的新闻报道、政府信息公开等渠道。</li>
         </ul>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>4. 我们如何存储个人信息</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>5. 我们如何存储个人信息</h2>
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>4.1 存储地点</h3>
         <p>我们依照法律法规的规定，将在境内运营过程中收集和产生的您的个人信息存储于中华人民共和国境内。目前，我们不会将上述信息传输至境外，如果我们向境外传输，我们将会遵循相关国家规定或者征求您的同意。</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>4.2 存储期限</h3>
         <p>我们仅在为提供知微宇宙及服务之目的所必需的期间内保留您的个人信息：您的信息将存储至您账号注销之日后的必要时间，在超出必要期限后，我们将对您的个人信息进行删除或匿名化处理，但法律法规另有规定的除外。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>5. 我们如何保护个人信息安全</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>6. 我们如何保护个人信息安全</h2>
         <p>a. 我们非常重视您个人信息的安全，将努力采取合理的安全措施（包括技术方面和管理方面）来保护您的个人信息，防止您提供的个人信息被不当使用或未经授权的情况下被访问、公开披露、使用、修改、损坏、丢失或泄漏。</p>
         <p>b. 我们会使用加密技术、匿名化处理等合理可行的手段保护您的个人信息，并使用安全保护机制防止您的个人信息遭到恶意攻击。</p>
         <p>c. 我们会建立专门的安全部门、安全管理制度、数据安全流程保障您的个人信息安全。我们采取严格的数据使用和访问制度，确保只有授权人员才可访问您的个人信息，并适时对数据和技术进行安全审计。</p>
@@ -437,7 +517,7 @@ const PrivacyPolicy: React.FC = () => {
         <p>f. 我们会制定应急处理预案，并在发生用户信息安全事件时立即启动应急预案，努力阻止这些安全事件的影响和后果扩大。一旦发生用户信息安全事件（泄露、丢失）后，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和可能的影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议、对您的补救措施。我们将及时将事件相关情况以推送通知、邮件、信函、短信及相关形式告知您，难以逐一告知时，我们会采取合理、有效的方式发布公告。同时，我们还将按照监管部门要求，上报用户信息安全事件的处置情况。</p>
         <p>g. 您一旦离开知微宇宙及相关服务，浏览或使用其他网站、服务及内容资源，我们将没有能力和直接义务保护您在知微宇宙及相关服务之外的软件、网站提交的任何个人信息，无论您登录、浏览或使用上述软件、网站是否基于知微宇宙的链接或引导。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>6. 管理您的个人信息</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. 管理您的个人信息</h2>
         <p>我们非常重视您对个人信息的关注，并尽全力保护您对于您个人信息访问、更正、删除以及撤回同意的权利，以使您拥有充分的能力保障您的隐私和安全。</p>
 
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.1 改变或撤回授权范围</h3>
@@ -467,17 +547,17 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>6.6 服务终止通知</h3>
         <p>如果我们停止运营，我们将及时停止收集您的个人信息，通过单独通知或公告的方式告知您服务终止，并删除或匿名化处理我们持有的您的个人信息。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>7. 未成年人保护</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. 未成年人保护</h2>
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>7.1 未成年人通用条款</h3>
         <p>a. 若您是未满18周岁的未成年人，在使用知微宇宙及相关服务前，应在您的父母或其他监护人监护、指导下共同阅读并同意本隐私政策。</p>
         <p>b. 我们根据国家相关法律法规的规定保护未成年人的个人信息，只会在法律允许、父母或其他监护人明确同意或保护未成年人所必要的情况下收集、使用、共享或披露未成年人的个人信息。如果我们发现在未事先获得可证实的父母同意的情况下收集了未成年人的个人信息，则会设法尽快删除相关数据。同时，我们制定了严格的未成年人信息收集使用规则，以保护儿童和青少年个人信息安全。</p>
         <p>c. 若您是未成年人的监护人，当您对您所监护的未成年人的个人信息有相关疑问时，请通过本隐私政策公示的联系方式与我们联系。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>8. 隐私政策的修订和通知</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. 隐私政策的修订和通知</h2>
         <p>a. 为了给您提供更好的服务，知微宇宙及相关服务将不时更新与变化，我们会适时对本隐私政策进行修订，这些修订构成本隐私政策的一部分并具有等同于本隐私政策的效力。本隐私政策更新后，我们会在知微宇宙发出更新版本并在更新后的条款生效前通过官方网站（http://sanwuyaoba.com）或其他适当方式提醒您相关内容的更新，以便您及时了解本隐私政策的最新版本。</p>
         <p>b. 对于重大变更，我们还会提供更为显著的通知（我们会通过包括但不限于邮件、短信、私信、在浏览页面做特别提示等方式，说明隐私政策的具体变更内容）。</p>
 
-        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>9. 联系我们</h2>
+        <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>10. 联系我们</h2>
         <p>如果您对本隐私政策或您个人信息的相关事宜有任何问题、意见或建议，请通过以下方式与我们联系：</p>
         <p>邮箱：3518@sanwuyaoba.com</p>
         <p>地址：广东省东莞市长安镇长光江南大境一期7栋404室</p>
