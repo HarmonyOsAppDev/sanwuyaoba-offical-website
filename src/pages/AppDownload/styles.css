@@ -1,6 +1,6 @@
 .app-download-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #000000 0%, #212121 100%);
+  /* background: linear-gradient(135deg, #000000 0%, #212121 100%); */
   padding: 20px;
   display: flex;
   align-items: center;
