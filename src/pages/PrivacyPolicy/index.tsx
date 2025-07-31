@@ -113,45 +113,43 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 Third-Party SDK Usage</h3>
         <p>Our application integrates third-party SDKs to provide specific functionalities. These SDKs may collect and process certain information. Below is a detailed list of the SDKs we use and their data collection practices:</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 WeChat OpenSDK</h4>
-        <p>We use WeChat OpenSDK Android (provided by Shenzhen Tencent Computer Systems Company Limited) to provide third-party login services. This SDK may collect and process:</p>
-        <ul>
-          <li>WeChat user identifier (OpenID/UnionID)</li>
-          <li>Basic profile information (nickname, avatar, when authorized by user)</li>
-          <li>Device information (device model, operating system version)</li>
-          <li>Network information (IP address for security purposes)</li>
-          <li>Usage statistics and performance data</li>
-          <li>Security verification data to prevent fraud</li>
-        </ul>
-        <p>Purpose: To enable secure third-party login functionality and improve user experience. For WeChat SDK privacy practices, please refer to <a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=en_US&t=weixin_agreement&s=privacy" target="_blank">WeChat Privacy Policy</a> and <a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8" target="_blank">WeChat Android SDK Privacy Policy</a>.</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 微信OpenSDK Android</h4>
+        <p><strong>SDK名称：</strong>微信OpenSDK Android</p>
+        <p><strong>开发者：</strong>深圳市腾讯计算机系统有限公司</p>
+        <p><strong>SDK隐私政策链接：</strong><a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8" target="_blank">https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8</a></p>
+        <p><strong>功能用途：</strong>提供第三方登录服务，实现微信账号快速登录功能。</p>
+        <p><strong>收集信息：</strong>微信用户标识符（OpenID/UnionID）、基本资料信息（昵称、头像，需用户授权）、设备信息（设备型号、操作系统版本）、网络信息（IP地址，用于安全验证）、使用统计数据和性能数据、安全验证数据以防止欺诈。</p>
+        <p><strong>完整隐私政策：</strong><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=en_US&t=weixin_agreement&s=privacy" target="_blank">微信隐私政策</a></p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 AR SDK</h4>
-        <p>We use EasyAR SDK (provided by Sightp Inc.), HUAWEI AR Engine SDK (provided by Huawei Software Technologies Co., Ltd.), and Unity SDK to provide augmented reality features. These SDKs may collect:</p>
-        <ul>
-          <li>Camera access for AR functionality</li>
-          <li>Device motion and orientation data</li>
-          <li>Basic device information for compatibility purposes</li>
-          <li>Unity SDK may collect device information for performance optimization</li>
-          <li>EasyAR SDK may collect usage statistics for service improvement</li>
-          <li>HUAWEI AR Engine SDK may collect device sensor data and performance metrics for AR functionality</li>
-        </ul>
-        <p>For EasyAR SDK privacy practices, please refer to <a href="https://www.easyar.cn/view/privacyPolicy.html" target="_blank">EasyAR Privacy Policy</a>.</p>
-        <p>For HUAWEI AR Engine SDK privacy practices, please refer to <a href="https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864" target="_blank">HUAWEI AR Engine Privacy Policy</a>.</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 EasyAR SDK</h4>
+        <p><strong>SDK名称：</strong>EasyAR SDK</p>
+        <p><strong>开发者：</strong>视辰信息科技（上海）有限公司</p>
+        <p><strong>SDK隐私政策链接：</strong><a href="https://www.easyar.cn/view/privacyPolicy.html" target="_blank">https://www.easyar.cn/view/privacyPolicy.html</a></p>
+        <p><strong>功能用途：</strong>提供增强现实（AR）功能，实现物体识别和AR内容渲染。</p>
+        <p><strong>收集信息：</strong>相机访问权限（用于AR功能）、设备运动和方向数据、基本设备信息（用于兼容性目的）、使用统计数据（用于服务改进）。</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Analytics SDK</h4>
-        <p>We use analytics SDKs to improve our services. These SDKs may collect:</p>
-        <ul>
-          <li>Usage statistics and crash reports</li>
-          <li>Device information (model, OS version)</li>
-          <li>Performance metrics</li>
-        </ul>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 HUAWEI AR Engine SDK</h4>
+        <p><strong>SDK名称：</strong>HUAWEI AR Engine SDK</p>
+        <p><strong>开发者：</strong>华为软件技术有限公司</p>
+        <p><strong>SDK隐私政策链接：</strong><a href="https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864" target="_blank">https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864</a></p>
+        <p><strong>功能用途：</strong>提供华为设备优化的增强现实（AR）功能，实现高性能AR体验。</p>
+        <p><strong>收集信息：</strong>设备传感器数据（加速度计、陀螺仪、磁力计）、性能指标（用于AR功能优化）、设备信息（用于兼容性检测）。</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.4 Storage SDK</h4>
-        <p>We use storage SDKs for data management. These SDKs may collect:</p>
-        <ul>
-          <li>Storage access permissions</li>
-          <li>File operation logs</li>
-        </ul>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.4 Unity SDK</h4>
+        <p><strong>SDK名称：</strong>Unity SDK</p>
+        <p><strong>开发者：</strong>Unity Technologies</p>
+        <p><strong>功能用途：</strong>提供游戏引擎和3D渲染功能，支持AR内容开发和运行。</p>
+        <p><strong>收集信息：</strong>设备信息（用于性能优化）、应用崩溃数据（用于稳定性改进）、使用统计（用于服务优化）。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.5 Analytics SDK</h4>
+        <p><strong>SDK名称：</strong>Analytics SDK</p>
+        <p><strong>功能用途：</strong>收集应用使用数据，帮助改进服务质量和用户体验。</p>
+        <p><strong>收集信息：</strong>使用统计数据、崩溃报告、设备信息（型号、操作系统版本）、性能指标。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.6 Storage SDK</h4>
+        <p><strong>SDK名称：</strong>Storage SDK</p>
+        <p><strong>功能用途：</strong>提供数据管理功能，支持文件存储和访问。</p>
+        <p><strong>收集信息：</strong>存储访问权限、文件操作日志。</p>
 
         <p>Please note that these SDKs are essential for providing our core services. We carefully select our SDK providers and ensure they comply with relevant privacy laws and regulations. You can control the permissions granted to these SDKs through your device settings.</p>
 
@@ -371,45 +369,43 @@ const PrivacyPolicy: React.FC = () => {
         <h3 style={{ fontSize: '18px', fontWeight: 'bold', marginBottom: '10px' }}>1.10 第三方SDK使用说明</h3>
         <p>我们的应用集成了第三方SDK以提供特定功能。这些SDK可能会收集和处理某些信息。以下是我们使用的SDK及其数据收集实践的详细说明：</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 微信OpenSDK</h4>
-        <p>我们使用微信OpenSDK Android（由深圳市腾讯计算机系统有限公司提供）来提供第三方登录服务。该SDK可能会收集和处理：</p>
-        <ul>
-          <li>微信用户标识符（OpenID/UnionID）</li>
-          <li>基本资料信息（昵称、头像，需用户授权）</li>
-          <li>设备信息（设备型号、操作系统版本）</li>
-          <li>网络信息（IP地址，用于安全验证）</li>
-          <li>使用统计数据和性能数据</li>
-          <li>安全验证数据以防止欺诈</li>
-        </ul>
-        <p>目的：实现安全的第三方登录功能并改善用户体验。微信SDK隐私实践详情请参阅<a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy" target="_blank">微信隐私政策</a>和<a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8" target="_blank">微信Android SDK隐私政策</a>。</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.1 微信OpenSDK Android</h4>
+        <p><strong>SDK名称：</strong>微信OpenSDK Android</p>
+        <p><strong>开发者：</strong>深圳市腾讯计算机系统有限公司</p>
+        <p><strong>SDK隐私政策链接：</strong><a href="https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8" target="_blank">https://support.weixin.qq.com/cgi-bin/mmsupportacctnodeweb-bin/pages/RYiYJkLOrQwu0nb8</a></p>
+        <p><strong>功能用途：</strong>提供第三方登录服务，实现微信账号快速登录功能。</p>
+        <p><strong>收集信息：</strong>微信用户标识符（OpenID/UnionID）、基本资料信息（昵称、头像，需用户授权）、设备信息（设备型号、操作系统版本）、网络信息（IP地址，用于安全验证）、使用统计数据和性能数据、安全验证数据以防止欺诈。</p>
+        <p><strong>完整隐私政策：</strong><a href="https://weixin.qq.com/cgi-bin/readtemplate?lang=zh_CN&t=weixin_agreement&s=privacy" target="_blank">微信隐私政策</a></p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 AR SDK</h4>
-        <p>我们使用 EasyAR SDK（由视辰信息科技（上海）有限公司提供）、HUAWEI AR Engine SDK（由华为软件技术有限公司提供）和 Unity SDK 来提供增强现实功能。这些SDK可能会收集：</p>
-        <ul>
-          <li>用于AR功能的相机访问权限</li>
-          <li>设备运动和方向数据</li>
-          <li>用于兼容性目的的基本设备信息</li>
-          <li>Unity SDK 可能会收集设备信息用于性能优化</li>
-          <li>EasyAR SDK 可能会收集使用统计数据用于服务改进</li>
-          <li>HUAWEI AR Engine SDK 可能会收集设备传感器数据和性能指标用于AR功能</li>
-        </ul>
-        <p>EasyAR SDK隐私实践详情请参阅<a href="https://www.easyar.cn/view/privacyPolicy.html" target="_blank">EasyAR隐私政策</a>。</p>
-        <p>HUAWEI AR Engine SDK隐私实践详情请参阅<a href="https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864" target="_blank">华为AR Engine隐私政策</a>。</p>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.2 EasyAR SDK</h4>
+        <p><strong>SDK名称：</strong>EasyAR SDK</p>
+        <p><strong>开发者：</strong>视辰信息科技（上海）有限公司</p>
+        <p><strong>SDK隐私政策链接：</strong><a href="https://www.easyar.cn/view/privacyPolicy.html" target="_blank">https://www.easyar.cn/view/privacyPolicy.html</a></p>
+        <p><strong>功能用途：</strong>提供增强现实（AR）功能，实现物体识别和AR内容渲染。</p>
+        <p><strong>收集信息：</strong>相机访问权限（用于AR功能）、设备运动和方向数据、基本设备信息（用于兼容性目的）、使用统计数据（用于服务改进）。</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 Analytics SDK</h4>
-        <p>我们使用分析SDK来改进我们的服务。这些SDK可能会收集：</p>
-        <ul>
-          <li>使用统计数据和崩溃报告</li>
-          <li>设备信息（型号、操作系统版本）</li>
-          <li>性能指标</li>
-        </ul>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.3 HUAWEI AR Engine SDK</h4>
+        <p><strong>SDK名称：</strong>HUAWEI AR Engine SDK</p>
+        <p><strong>开发者：</strong>华为软件技术有限公司</p>
+        <p><strong>SDK隐私政策链接：</strong><a href="https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864" target="_blank">https://developer.huawei.com/consumer/cn/doc/graphics-Guides/arenginesdk-data-security-new-0000001669266864</a></p>
+        <p><strong>功能用途：</strong>提供华为设备优化的增强现实（AR）功能，实现高性能AR体验。</p>
+        <p><strong>收集信息：</strong>设备传感器数据（加速度计、陀螺仪、磁力计）、性能指标（用于AR功能优化）、设备信息（用于兼容性检测）。</p>
 
-        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.4 Storage SDK</h4>
-        <p>我们使用存储SDK进行数据管理。这些SDK可能会收集：</p>
-        <ul>
-          <li>存储访问权限</li>
-          <li>文件操作日志</li>
-        </ul>
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.4 Unity SDK</h4>
+        <p><strong>SDK名称：</strong>Unity SDK</p>
+        <p><strong>开发者：</strong>Unity Technologies</p>
+        <p><strong>功能用途：</strong>提供游戏引擎和3D渲染功能，支持AR内容开发和运行。</p>
+        <p><strong>收集信息：</strong>设备信息（用于性能优化）、应用崩溃数据（用于稳定性改进）、使用统计（用于服务优化）。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.5 Analytics SDK</h4>
+        <p><strong>SDK名称：</strong>Analytics SDK</p>
+        <p><strong>功能用途：</strong>收集应用使用数据，帮助改进服务质量和用户体验。</p>
+        <p><strong>收集信息：</strong>使用统计数据、崩溃报告、设备信息（型号、操作系统版本）、性能指标。</p>
+
+        <h4 style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '10px' }}>1.10.6 Storage SDK</h4>
+        <p><strong>SDK名称：</strong>Storage SDK</p>
+        <p><strong>功能用途：</strong>提供数据管理功能，支持文件存储和访问。</p>
+        <p><strong>收集信息：</strong>存储访问权限、文件操作日志。</p>
 
         <p>请注意，这些SDK对于提供我们的核心服务是必不可少的。我们谨慎选择SDK提供商，并确保他们遵守相关的隐私法律法规。您可以通过设备设置控制授予这些SDK的权限。</p>
 
