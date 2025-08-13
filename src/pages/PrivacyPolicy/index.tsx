@@ -556,7 +556,7 @@ const PrivacyPolicy: React.FC = () => {
         <h2 style={{ fontSize: '20px', fontWeight: 'bold', marginBottom: '10px' }}>10. 联系我们</h2>
         <p>如果您对本隐私政策或您个人信息的相关事宜有任何问题、意见或建议，请通过以下方式与我们联系：</p>
         <p>邮箱：3518@sanwuyaoba.com</p>
-        <p>地址：广东省东莞市长安镇长光江南大境一期7栋404室</p>
+        <p>地址：广东省深圳市龙岗区坂田手造文化街1-2号</p>
         <p>我们会在验证您的用户身份后的十五个工作日内回复您的请求。</p>
       </div>
     </div>
