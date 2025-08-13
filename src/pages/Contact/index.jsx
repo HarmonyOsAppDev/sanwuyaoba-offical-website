@@ -30,7 +30,7 @@ export default function Contact() {
         <i className={`fas fa-envelope text-3xl text-white`}> <span className="text-3xl font-bold text-white">联系我们</span></i>
         <p className="text-gray-300">邮箱：3518@sanwuyaoba.com</p>
         <p className="text-gray-300">电话：19129384264</p>
-        <p className="text-gray-300">地址：广东省东莞市长安镇龙光江南大境一期7栋404室</p>
+        <p className="text-gray-300">地址：广东省深圳市龙岗区坂田手造文化街1-2号</p>
         <p className="text-gray-300">我们会在验证您的用户身份后的15个工作日内回复您的请求</p>
       </Card>
       </main>
